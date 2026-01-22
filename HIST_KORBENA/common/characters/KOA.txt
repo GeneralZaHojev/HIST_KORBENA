@@ -1,0 +1,15 @@
+characters = {
+    KOA_BERDANSK_KOR = {
+		name = KOA_BERDANSK_KOR
+		portraits = {
+			civilian = {
+				large = GFX_portrait_BERDANSK_KOA
+			}
+		}
+		country_leader = {
+			ideology = moderatism
+			expire="1965.1.1.1"
+			id = -1
+		}
+	}
+}

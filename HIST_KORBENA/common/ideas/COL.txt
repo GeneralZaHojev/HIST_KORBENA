@@ -1,0 +1,33 @@
+ideas = {
+	country = {
+        BAN_BAN = {	
+			allowed = {
+				always = no
+			}
+			picture = NOR_complacent_cabinet_ns
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			cancel = {
+				has_war = yes
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -5
+				consumer_goods_factor = 1.5
+				production_speed_buildings_factor = -1.5
+				ai_get_ally_desire_factor  = -500
+				ai_join_ally_desire_factor = -500
+				join_faction_tension = 100
+				industrial_capacity_factory = -1.5
+				industrial_capacity_dockyard = -1.5
+				experience_gain_army = -5
+				experience_gain_navy = -5
+				experience_gain_air = -5
+				political_power_gain = -10
+				command_power_gain = -10
+                research_speed_factor = -1000
+			}
+		}
+    }
+}
