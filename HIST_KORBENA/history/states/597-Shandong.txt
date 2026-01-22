@@ -1,70 +1,41 @@
 state = {
-
 	id = 597
-	name = "STATE_597"
-	manpower = 12791066
-	state_category = rural
-	
+	name ="STATE_597"
+	manpower = 15121200
+	state_category = large_city
 	resources = {
-		aluminium = 8 
-	}
-	
-	history = {
-
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = PRC
-
-		1936.1.1 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender"
-				}
-				transfer_state_to = CHI
-				add_core_of = SND
-			}
-		}
-
-		victory_points = {
-			1104 2 # Yantai
-		}
-
-		victory_points = {
-			4205 1 # Weihaiwei
-		}
-
-		buildings = {
-			infrastructure = 2
-
-			4205 = {
-				naval_base = 2
-				coastal_bunker = 1
-				bunker = 1
-			}
-
-			1104 = {
-				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
-			}
-
-		}
-
-		1938.10.25 = {
-			IF = {
-				limit = {
-					has_dlc = "No Compromise, No Surrender" 
-				}
-			}	
-			owner = CHI
-			controller = CHI		
-		}
+		coal = 58
 		
 	}
 
-	provinces = {
-		1104 1154 1184 1200 4089 4157 4186 4205 7089 7105 9971 10018 12074 
+	history = {
+		owner = SND
+		add_core_of = SND
+		add_core_of = CHI
+		#
+		victory_points = {
+			1069 5
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
 	}
-
-	local_supplies = 4.0 
+	provinces = {
+		1069
+		4037
+		7160
+		7189
+		9987
+		10043
+		10072
+		11933
+		11962
+		12045
+		12069
+		13658
+		14245
+	}
 }

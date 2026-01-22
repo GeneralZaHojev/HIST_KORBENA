@@ -1,22 +1,24 @@
-state={
-	id=678
-	name="STATE_678"
 
-	history={
-		owner = KOB
+state = {
+	id = 678
+	name ="STATE_678"
+	manpower =42
+	state_category = wasteland_impassable
+	impassable = yes
+
+	history = {
+		owner = SAU
 		buildings = {
 			infrastructure = 0
-
 		}
-		add_core_of = KOB
-
+		add_core_of = SAU
 	}
 
-	provinces={
-		4932 5081 8118 12740 
+	provinces = {
+		5081
+		8030
+		8118
+		10870
+		12768
 	}
-	manpower=42
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
 }

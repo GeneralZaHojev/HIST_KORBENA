@@ -1,0 +1,35 @@
+state = {
+	id = 152
+	name = "STATE_152"
+	manpower = 1021350
+	state_category = city
+	history = {
+		owner = AUS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 5
+			 
+			arms_factory = 2
+			air_base = 4
+		}
+		victory_points = {
+			9665 3
+		}
+		victory_points = {
+			732 10
+		}
+		add_core_of = AUS
+		1938.3.12 = {
+			owner = GER
+			controller = GER
+			add_core_of = GER
+		}
+	}
+	provinces = {
+		732
+		3684
+		3703
+		6708
+		9665
+	}
+}

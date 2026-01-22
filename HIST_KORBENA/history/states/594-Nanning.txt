@@ -1,48 +1,33 @@
+
 state = {
 	id = 594
-	name = "STATE_594"
-	manpower = 3275000
-	state_category = town
+	name ="STATE_594"
+	manpower = 4650000
+	state_category = city
 	resources = {
-		tungsten = 11 # was: 14
-		steel = 8 # was: 10
+		
 		chromium = 3 # was: 4
 	}
 
 	history = {
-
-		owner = CHI
+		owner = GXC
 		add_core_of = GXC
 		add_core_of = CHI
-		add_core_of = PRC
-
+		#
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			industrial_complex = 7
+			arms_factory = 2
 		}
-
-		victory_points = { 
-			7137 10 # Nanning
-		}
-
-		victory_points = { 
-			10459 1 # Bose
-		}
-
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
+		victory_points = {
+			7137 10
 		}
 	}
 
-	provinces={
-		4028 4077 7044 7137 7650 10050 11983 12023 
+	provinces = {
+		4121
+		4177
+		7137
+		13440
 	}
-
-	local_supplies = 1.0 
 }
