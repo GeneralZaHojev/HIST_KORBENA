@@ -4,8 +4,9 @@ state = {
 	name ="STATE_43" # Northern Hungary
 	manpower = 2135598
 	resources = {
-		
-		coal = 96
+		steel = 6 #was 3 was: 4
+		aluminium = 40 # was: 194
+		coal = 4
 	}
 
 	state_category = city
@@ -19,11 +20,11 @@ state = {
 			3731 3
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 3
+			infrastructure = 3
+			arms_factory = 4
 			industrial_complex = 4
 			 
-			air_base = 1
+			air_base = 4
 		}
 		add_core_of = HUN
 	}

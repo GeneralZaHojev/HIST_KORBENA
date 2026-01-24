@@ -4,7 +4,8 @@ state = {
 	name ="STATE_19"
 	manpower = 1340400
 	resources = {
-
+		steel=14 #was 25
+		aluminium=11
 	}
 
 	state_category = city
@@ -15,12 +16,10 @@ state = {
 			9737 25
 		}
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 7
 			dockyard = 1
 			air_base = 3
-			fuel_silo = 1
 			9737 = {
 				naval_base = 3
 				coastal_bunker = 1

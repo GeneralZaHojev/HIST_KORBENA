@@ -2,7 +2,7 @@
 state = {
 	id = 303
 	name ="STATE_303" # Lima
-	manpower = 3563249
+	manpower = 1
 	resources = {
 		oil =14 # was: 18
 	}
@@ -10,17 +10,11 @@ state = {
 	state_category = large_city
 
 	history = {
-		owner = PRU
+		owner = KOA
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 12
-			air_base = 3
-			12997 = {
-				naval_base = 5
-			}
+			infrastructure = 1
 		}
-		add_core_of = PRU
+		add_core_of = KOA
 		victory_points = {
 			12997 5
 		}

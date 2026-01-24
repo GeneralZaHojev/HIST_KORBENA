@@ -4,7 +4,7 @@ state = {
 	name ="STATE_68"
 	manpower = 1250840
 	resources = {
-
+		aluminium = 15
 	}
 
 	state_category = city
@@ -15,8 +15,8 @@ state = {
 		}
 		owner = GER
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 1
 			 
 			 
 		}
@@ -32,4 +32,5 @@ state = {
 		9387
 		11478
 	}
+	local_supplies = 0.0 
 }

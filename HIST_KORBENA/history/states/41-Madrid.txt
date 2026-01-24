@@ -16,12 +16,12 @@ state = {
 			3938 30
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 4
-			industrial_complex = 7
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
 			 
 			 
-			air_base = 5
+			air_base = 6
 		}
 		add_core_of = SPR
 	}

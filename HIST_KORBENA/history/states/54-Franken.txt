@@ -7,16 +7,14 @@ state = {
 	state_category = city
 
 	resources = {
-		
+		coal = 8 
 	}
 
 	history = {
 		owner = GER
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 7
-			 
-			arms_factory = 3
+			infrastructure = 4
+			industrial_complex = 2
 		}
 		victory_points = {
 			11544 10
@@ -39,4 +37,5 @@ state = {
 		13116
 		13387
 	}
+	local_supplies = 0.0 
 }

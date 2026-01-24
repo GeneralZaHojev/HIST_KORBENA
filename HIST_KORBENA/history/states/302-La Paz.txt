@@ -8,19 +8,11 @@ state = {
 	state_category = city
 
 	history = {
-		owner = BOL
+		owner = KOA
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 10
-			air_base = 2
-
+			infrastructure = 1
 		}
-		add_core_of = BOL
-		victory_points = {
-			5230 5
-		}
-
+		add_core_of = KOA
 	}
 
 	provinces = {
@@ -39,6 +31,6 @@ state = {
 		13174
 		13195
 	}
-	manpower = 2044500
+	manpower = 1
 	buildings_max_level_factor = 1.000
 }

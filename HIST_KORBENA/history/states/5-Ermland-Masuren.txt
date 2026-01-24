@@ -16,9 +16,7 @@ state = {
 		controller = GER
 
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 3
+			infrastructure = 3
 		}
 		add_core_of = GER
 	}
@@ -36,4 +34,5 @@ state = {
 		11245
 		11386
 	}
+	local_supplies=12.0 
 }

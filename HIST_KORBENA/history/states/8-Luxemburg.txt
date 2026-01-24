@@ -6,13 +6,13 @@ state = {
 
 	manpower = 294748
 	resources = {
-
+		steel = 14
 	}
 
 	history = {
 		owner = LUX
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 3
 			 

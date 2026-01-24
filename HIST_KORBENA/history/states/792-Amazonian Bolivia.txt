@@ -1,17 +1,17 @@
 state = {
 	id = 792
 	name ="STATE_792"
-	manpower = 101200
+	manpower = 1
 
 	state_category = enclave
 	impassable = yes
 
 	history = {
-		owner = BOL
+		owner = KOA
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
-		add_core_of = BOL
+		add_core_of = KOA
 	}
 	provinces = {
 		5188

@@ -4,7 +4,6 @@ state = {
 	name ="STATE_59"
 	resources = {
 		oil = 2
-		coal = 30
 		
 	}
 
@@ -20,11 +19,14 @@ state = {
 			6377 10
 		}
 		buildings = {
-			infrastructure = 7
-			arms_factory = 4
-			industrial_complex = 4
-			dockyard = 1
-			3326 = {
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 2
+			6325 = { # Buxtehude
+				naval_base = 1
+			}
+			374 = { # Cuxhaven
 				naval_base = 1
 			}
 		}
@@ -49,7 +51,7 @@ state = {
 		11493
 		13912
 	}
-	manpower =2038286
-	buildings_max_level_factor =1.000
+	manpower = 2438286
 	state_category =large_city
+	local_supplies = 0.0 
 }

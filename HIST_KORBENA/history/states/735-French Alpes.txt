@@ -20,25 +20,25 @@ state = {
 			infrastructure = 4
 			industrial_complex = 3
 			778 = {
-				bunker = 5
+				bunker = 3
 			}
 			9745 = {
-				bunker = 5
+				bunker = 3
 			}
 			764 = {
-				bunker = 5
+				bunker = 3
 			}
 			3764 = {
-				bunker = 5
+				bunker = 3
 			}
 			6975 = {
-				bunker = 5
+				bunker = 3
 			}
 			3959 = {
-				bunker = 5
+				bunker = 3
 			}
 			9909 = {
-				bunker = 5
+				bunker = 3
 				naval_base = 2
 			}
 		}

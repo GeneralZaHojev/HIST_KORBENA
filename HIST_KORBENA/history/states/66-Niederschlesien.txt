@@ -4,8 +4,9 @@ state = {
 	name ="STATE_66"
 	manpower = 3052726
 	resources = {
-		coal = 560
-		
+		steel = 10 #was 32 #was 50 # was: 110
+		aluminium = 16 # was: 38
+		coal = 12 
 	}
 
 	state_category = large_city
@@ -16,11 +17,9 @@ state = {
 			9570 10
 		}
 		buildings = {
-			infrastructure = 6
-			industrial_complex = 4
-			 
-			arms_factory = 5
-			air_base = 5
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 6
 		}
 		add_core_of = GER
 
@@ -41,4 +40,5 @@ state = {
 		9570
 		11517
 	}
+	local_supplies = 10.0 
 }

@@ -2,7 +2,7 @@
 state = {
 	id = 279
 	name ="STATE_279" # Santiago
-	manpower = 3935146
+	manpower = 1
 
 	state_category = large_city
 
@@ -12,26 +12,11 @@ state = {
 	}
 
 	history = {
-		owner = CHL
+		owner = KOA
 		buildings = {
-			infrastructure = 5
-			arms_factory = 2
-			industrial_complex = 14
-			air_base = 3
-			8222 = {
-				naval_base = 5
-			}
-			5121 = {
-				naval_base = 1
-			}
-			650 = {
-				bunker = 1
-			}
+			infrastructure = 1
 		}
-		add_core_of = CHL
-		victory_points = {
-			650 10
-		}
+		add_core_of = KOA
 
 	}
 

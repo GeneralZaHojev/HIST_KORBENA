@@ -2,7 +2,7 @@
 state = {
 	id = 487
 	name ="STATE_487"
-	manpower = 232300
+	manpower = 1
 
 	state_category = pastoral
 
@@ -11,12 +11,11 @@ state = {
 	}
 
 	history = {
-		owner = BOL
+		owner = KOA
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
 		}
-		add_core_of = BOL
+		add_core_of = KOA
 	}
 
 	provinces = {

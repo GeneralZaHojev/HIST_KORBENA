@@ -10,7 +10,7 @@ state = {
 		oil = 1
 	}
 	history = {
-		owner = YEM
+		owner = KOB
 		buildings = {
 			infrastructure = 1
 		}

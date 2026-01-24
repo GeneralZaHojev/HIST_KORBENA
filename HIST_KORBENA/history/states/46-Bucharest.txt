@@ -4,7 +4,7 @@ state = {
 	name ="STATE_46" # Bucharest
 	manpower = 992536
 	resources = {
-		oil = 5 # moved her from mutenia
+		oil = 44 # moved her from mutenia
 	}
 
 	state_category = large_city
@@ -13,9 +13,10 @@ state = {
 		owner = ROM
 		victory_points = { 9617 20 }
 		buildings = {
-			infrastructure = 6
-			arms_factory = 5
-			industrial_complex = 7
+			infrastructure = 3
+			arms_factory = 3
+			industrial_complex = 1
+			air_base = 3
 		}
 		add_core_of = ROM
 	}

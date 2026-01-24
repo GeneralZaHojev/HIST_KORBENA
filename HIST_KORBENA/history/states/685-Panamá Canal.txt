@@ -18,7 +18,7 @@ state = {
 				naval_supply_hub = 1 # Panama Canal - Special Service Squadron (AKA Panama Canal fleet) HQ
 			}
 		}
-		add_core_of = PAN
+		add_core_of = KOA
 	}
 
 	provinces = {

@@ -3,17 +3,15 @@ state = {
 	name ="STATE_35"
 
 	resources = {
-		coal = 213
+		coal = 12
 	}
 
 	history = {
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
-			infrastructure = 7
-			arms_factory = 1
-			industrial_complex = 13
-			dockyard = 3
+			infrastructure = 3
+			industrial_complex = 5
 			9498 = {
 				naval_base = 7
 			}

@@ -17,16 +17,20 @@ state = {
 			11388 5
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 2
-			industrial_complex = 7
-			dockyard = 5
+			infrastructure = 3
+			industrial_complex = 2
+			dockyard = 2
 			fuel_silo = 1
 			241 = {
 				naval_base = 8
-				coastal_bunker = 5
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
-			air_base = 5
+			air_base = 3
 		}
 		add_core_of = GER
 	}
@@ -44,4 +48,5 @@ state = {
 		11388
 		13871
 	}
+	local_supplies = 14.0 
 }

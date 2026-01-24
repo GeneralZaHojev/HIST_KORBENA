@@ -11,18 +11,11 @@ state = {
 	}
 
 	history = {
-		owner = VEN
+		owner = KOA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 4
-			1944 = {
-				naval_base = 5
-			}
+			infrastructure = 1
 		}
-		add_core_of = VEN
-		victory_points = {
-			1944 1
-		}
+		add_core_of = KOA
 
 	}
 

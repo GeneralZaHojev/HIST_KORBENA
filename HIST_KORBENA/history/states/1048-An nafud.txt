@@ -11,7 +11,7 @@ state = {
 	}
 
 	history = {
-		owner = SAU
+		owner = KOB
 		buildings = {
 		}
 		add_core_of = SAU

@@ -4,10 +4,11 @@ state = {
 	name ="STATE_63"
 	manpower = 1124417
 	resources = {
-
+		steel = 7 #was 8  #was 16 was: 23 # was: 36
+		aluminium = 6
 	}
 
-	state_category = large_town
+	state_category = town
 
 	history = {
 		owner = GER
@@ -18,26 +19,14 @@ state = {
 			11372 3
 		}
 		buildings = {
-			infrastructure = 6
-			arms_factory = 1
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 1
 			11372 = {
 				naval_base = 1
 			}
 			6282 = {
 				naval_base = 4
-			}
-			11343 = {
-				bunker = 3
-			}
-			11316 = {
-				bunker = 3
-			}
-			11288 = {
-				bunker = 3
-			}
-			11260 = {
-				bunker = 3
+
 			}
 			air_base = 3
 		}
@@ -60,4 +49,5 @@ state = {
 		11343
 		11372
 	}
+	local_supplies = 7.0 
 }
