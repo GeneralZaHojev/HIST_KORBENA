@@ -9,8 +9,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 12
-			dockyard = 3
+			industrial_complex = 1
 		}
 		add_core_of = USA
 	}
@@ -18,7 +17,7 @@ state = {
 	provinces = {
 		11830
 	}
-	manpower =700000
+	manpower =1050589
 	buildings_max_level_factor =1.000
 	state_category =large_city
 }

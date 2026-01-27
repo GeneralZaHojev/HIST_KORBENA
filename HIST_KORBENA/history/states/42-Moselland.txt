@@ -3,9 +3,8 @@ state = {
 	id = 42
 	name ="STATE_42"
 	resources = {
-		steel = 50 #was 21 #was 35 was 59 # was: 100
-		aluminium = 14 # was: 24
-		coal = 14
+		steel = 35  #was 18 #was 30 was: 54
+		aluminium = 14
 	}
 
 	history = {
@@ -21,9 +20,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
-			 
-
+			industrial_complex = 1
 		}
 		add_core_of = GER
 		set_demilitarized_zone = yes
@@ -40,7 +37,6 @@ state = {
 		11547
 		11560
 	}
-	manpower =2027739
-	buildings_max_level_factor =1.000
+	manpower =3072371
 	state_category =metropolis
 }

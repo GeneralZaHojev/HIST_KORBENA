@@ -3,13 +3,12 @@ state = {
 	name ="STATE_806"
 
 	resources = {
-		chromium = 20
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			industrial_complex = 1
 
 
@@ -36,6 +35,5 @@ state = {
 		12553
 	}
 	manpower =300000
-	buildings_max_level_factor =1.000
 	state_category =town
 }

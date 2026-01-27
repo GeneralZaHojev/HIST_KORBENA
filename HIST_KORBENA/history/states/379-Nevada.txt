@@ -3,15 +3,15 @@ state = {
 	id = 379
 	name ="STATE_379"
 	resources = {
-		
-		tungsten = 32
+		steel = 70 # was: 136
+		tungsten = 32 # was: 62
+		aluminium = 36
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
 			 
 		}
 		add_core_of = USA

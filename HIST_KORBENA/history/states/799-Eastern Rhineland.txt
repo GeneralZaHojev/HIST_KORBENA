@@ -1,11 +1,11 @@
 state = {
 	id = 799
 	name ="STATE_799"
-	manpower =3000000
-	buildings_max_level_factor =1.000
+	manpower =1513869
 	state_category = megalopolis
 	resources = {
-		coal = 338
+		steel = 15 #was 21 #was 35 was 59 # was: 100
+		coal = 25
 	}
 
 	history = {
@@ -23,13 +23,9 @@ state = {
 		}
 
 		buildings = {
-			infrastructure = 3
-			arms_factory = 3
-			industrial_complex = 14
-			 
-			synthetic_refinery = 1
-			air_base = 5
-
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
 		}
 
 

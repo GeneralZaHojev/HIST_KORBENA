@@ -6,12 +6,8 @@ state = {
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 13
-			 
+			infrastructure = 3			 
 			dockyard = 4
-			air_base = 8
-			fuel_silo = 1
 			788 = {
 				naval_base = 10
 				naval_headquarters = { # Norfolk - De-facto Atlantic HQ until formal establishment post-war
@@ -42,7 +38,7 @@ state = {
 		11738
 		11841
 	}
-	manpower =2351054
-	buildings_max_level_factor =1.000
+	manpower =1124540
+	local_supplies=11.0
 	state_category =metropolis
 }

@@ -3,17 +3,15 @@ state = {
 	name ="STATE_812"
 
 	resources = {
-		oil = 320
+		oil = 125
 		
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 14
-
-			air_base = 3
+			infrastructure = 2
+			industrial_complex = 2
 
 
 		}

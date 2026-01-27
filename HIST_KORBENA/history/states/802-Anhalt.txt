@@ -2,10 +2,6 @@ state = {
 	id = 802
 	name ="STATE_802"
 
-	resources = {
-		coal = 471
-	}
-
 	history = {
 		owner = GER
 
@@ -14,13 +10,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 5
-			industrial_complex = 4
-			anti_air_building = 1
-			synthetic_refinery = 1
-			 
-			air_base = 5
-			fuel_silo = 2
+			6487 = {
+                land_facility = 1 #Representing Kommersdorf's Research Facilities
+            }
 		}
 		add_core_of = GER
 	}
@@ -35,7 +27,6 @@ state = {
 		11359
 		11468
 	}
-	manpower =1400000
-	buildings_max_level_factor =1.000
+	manpower = 726502
 	state_category =large_city
 }

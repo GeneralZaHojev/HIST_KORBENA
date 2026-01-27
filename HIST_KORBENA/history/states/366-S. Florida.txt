@@ -6,9 +6,9 @@ state = {
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 15
-			air_base = 3
+			infrastructure = 2
+			industrial_complex = 2
+			air_base = 8
 
 			1843 = {
 				naval_base = 5
@@ -42,7 +42,7 @@ state = {
 		12439
 		12752
 	}
-	manpower =1048210
-	buildings_max_level_factor =1.000
-	state_category =large_city
+	manpower = 734105
+	local_supplies=10.0 
+	state_category =city
 }

@@ -5,15 +5,14 @@ state = {
 	manpower = 537605
 	state_category = rural
 	resources = {
-		tungsten = 6 # was: 16
-		coal = 42
+		tungsten = 11 # was: 16
+		coal = 7
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 		}
 		add_core_of = USA
 		victory_points = {

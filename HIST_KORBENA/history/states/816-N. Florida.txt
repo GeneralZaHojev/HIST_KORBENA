@@ -5,8 +5,8 @@ state = {
 		owner = USA
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 12
-			air_base = 2
+			industrial_complex = 1
+			air_base = 8
 			1572 = {
 				naval_base = 2
 
@@ -35,7 +35,7 @@ state = {
 		12353
 		12381
 	}
-	manpower =720000
-	buildings_max_level_factor =1.000
+	manpower = 734105
+	local_supplies=10.0 
 	state_category =city
 }

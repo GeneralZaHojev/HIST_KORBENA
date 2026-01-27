@@ -2,7 +2,7 @@ state = {
 	id = 810
 	name ="STATE_810"
 
-	manpower =2484000
+	manpower =1816257
 	buildings_max_level_factor =1.000
 	state_category =metropolis
 
@@ -15,20 +15,18 @@ state = {
 			13246 1
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 5
-			industrial_complex = 10
-			 
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1
 			anti_air_building = 1
-
 			6521 = {
-			    landmark_berlin_reichstag = {
-			        allowed = {
-			            has_dlc = "Gotterdammerung"
-			        }
-			        level = 1
-			    }
-			}
+                landmark_berlin_reichstag = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "Gotterdammerung"
+                    }
+                }
+            }
 		}
 		add_core_of = GER
 

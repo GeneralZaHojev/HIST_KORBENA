@@ -7,14 +7,14 @@ state = {
 	state_category = city
 
 	resources = {
-		coal = 327
+		coal = 8
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 13
+			infrastructure = 3
+			industrial_complex = 3
 			7480 = {
 				naval_base = 3
 			}

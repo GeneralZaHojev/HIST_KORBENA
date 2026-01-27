@@ -9,16 +9,14 @@ state = {
 	resources = {
 		oil = 45
 		
-		coal = 12
+		coal = 11
 	}
 
 	history = {
 		owner = USA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 9
-			arms_factory = 1
-			air_base = 3
+			industrial_complex = 2
 			 
 
 		}

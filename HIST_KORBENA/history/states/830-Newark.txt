@@ -8,9 +8,8 @@ state = {
 			6882 5
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			dockyard = 2
+			infrastructure = 4
+			industrial_complex = 2
 			air_base = 4
 			6882 = {
 				naval_base = 6
@@ -27,7 +26,7 @@ state = {
 		6882
 		11782
 	}
-	manpower =3000000
-	buildings_max_level_factor =1.000
+	manpower =2020666
+	local_supplies=15.0 
 	state_category =metropolis
 }

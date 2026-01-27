@@ -3,14 +3,16 @@ state = {
 	id = 261
 	name ="STATE_261"
 	resources = {
-		coal = 318
+		coal = 13
+		steel=28 # was: 48.000
+		aluminium=9
 	}
 
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 9
+			infrastructure = 4
+			industrial_complex = 3
 
 		}
 		add_core_of = USA
@@ -32,5 +34,6 @@ state = {
 	}
 	manpower =846694
 	buildings_max_level_factor =1.000
+	local_supplies=11.0 
 	state_category =large_city
 }

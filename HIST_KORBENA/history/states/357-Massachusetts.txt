@@ -2,7 +2,7 @@
 state = {
 	id = 357
 	name ="STATE_357"
-	manpower =4024713
+	manpower =1050589
 	buildings_max_level_factor =1.000
 	state_category = large_metropolis
 
@@ -13,9 +13,9 @@ state = {
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 10
+			infrastructure = 4
+			industrial_complex = 1
+			dockyard = 1
 			 
 		}
 		add_core_of = USA

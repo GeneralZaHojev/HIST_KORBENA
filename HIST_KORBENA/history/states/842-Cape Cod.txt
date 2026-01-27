@@ -5,8 +5,7 @@ state = {
 	history = {
 		owner = USA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 8
+			infrastructure = 4
 		}
 		add_core_of = USA
 	}
@@ -16,7 +15,7 @@ state = {
 		905
 		3906
 	}
-	manpower =400000
+	manpower =1050589
 	buildings_max_level_factor =1.000
 	state_category =town
 }

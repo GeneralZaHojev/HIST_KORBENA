@@ -4,7 +4,7 @@ state = {
 	name ="STATE_1048"
 	manpower = 1030
 
-	state_category = wasteland_impassable
+	state_category = wasteland
 	impassable = yes
 
 	resources = {

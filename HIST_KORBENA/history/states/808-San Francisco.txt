@@ -6,10 +6,10 @@ state = {
 		owner = USA
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
 			arms_factory = 1
-			dockyard = 4
-			air_base = 8
+			dockyard = 1
+			air_base = 10
 
 			9671 = {
 				naval_base = 4
@@ -38,6 +38,5 @@ state = {
 		9671
 	}
 	manpower =2000000
-	buildings_max_level_factor =1.000
 	state_category =megalopolis
 }
