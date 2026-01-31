@@ -6,20 +6,19 @@ state = {
 	state_category = megalopolis
 
 	resources = {
-		chromium=52 # was: 88
-		
-		coal = 340
+		chromium = 32 # was: 88, then 52
+		coal = 15 # initial distribution
 	}
 
 	history = {
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			infrastructure = 3
-			air_base = 2
-			dockyard = 5
-			arms_factory = 10
-			industrial_complex = 4
+			infrastructure = 4
+			air_base = 3
+			dockyard = 3
+			arms_factory = 1
+			industrial_complex = 1
 			 
 			9950 = {
 				naval_base = 6

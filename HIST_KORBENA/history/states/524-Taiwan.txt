@@ -4,8 +4,8 @@ state = {
 	manpower = 4592537
 
 	resources = {
-		
-		coal = 25
+		coal = 8 # 200,000 metric tons produced 
+		oil = 3
 	}
 
 	state_category = large_town
@@ -16,9 +16,10 @@ state = {
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
-			air_base = 5
+			air_base = 6
 			12068 = {
 				naval_base = 10
+				naval_supply_hub = 1
 			}
 		}
 		victory_points = {

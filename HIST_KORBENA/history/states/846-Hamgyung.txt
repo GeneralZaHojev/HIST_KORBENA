@@ -5,14 +5,15 @@ state = {
 	manpower = 1693550
 	state_category = rural
 	resources = {
-		tungsten = 72
+		steel = 10 # was: 30
+		tungsten = 10 # was: 52 - moved 10 to South Korea and the Sangdong province
+		coal = 4
 	}
 
 	history = {
 		owner = JAP
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 		}
 
 		add_core_of = KOR

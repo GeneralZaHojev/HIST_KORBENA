@@ -13,8 +13,8 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
-	color_ui = rgb { 47 172 255 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 FRA = {
 	color = rgb { 57 113 228 }
@@ -70,12 +70,12 @@ YUG = {
 	color_ui = rgb { 94 95 164 }
 }
 SWI = {
-	color = rgb { 224 5 5 }
-	color_ui = rgb { 193 81 81 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 TUR = {
-	color = rgb { 171 190 152 }
-	color_ui = rgb { 222 247 198 }
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
 }
 GRE = {
 	color = rgb { 93 181 227 }
@@ -190,8 +190,8 @@ LIB = {
 	color_ui = rgb { 198 169 248 }
 }
 MEX = {
-	color = rgb { 104 152 83 }
-	color_ui = rgb { 135 198 108 }
+	color = rgb {  0 0 0 }
+	color_ui = rgb {  0 0 0 }
 }
 NEP = {
 	color = rgb { 152 130 191 }

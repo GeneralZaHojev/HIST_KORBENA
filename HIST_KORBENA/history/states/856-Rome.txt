@@ -9,9 +9,8 @@ state = {
 		owner = ITA
 		victory_points = { 9904 40 }
 		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 8
+			infrastructure = 4
+			industrial_complex = 2
 
 			9904 = {
 			    landmark_colosseum = {

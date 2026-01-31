@@ -11,9 +11,8 @@ state = {
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 5
-			synthetic_refinery = 1
+			infrastructure = 3
+			industrial_complex = 2
 			6626 = {
 				naval_base = 5
 			}
@@ -27,4 +26,5 @@ state = {
 	}
 	manpower = 622080
 	buildings_max_level_factor =1.000
+	local_supplies = 5.0 
 }
