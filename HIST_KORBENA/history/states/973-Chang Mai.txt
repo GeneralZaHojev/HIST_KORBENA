@@ -7,13 +7,13 @@ state = {
 	state_category = pastoral
 
 	resources = {
+		coal = 1
 	}
 
 	history = {
 		owner = SIA
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {
 			1488 1

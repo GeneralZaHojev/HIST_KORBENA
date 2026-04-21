@@ -4,10 +4,11 @@ state = {
 	name ="STATE_129"
 	manpower = 2212021
 
-	state_category = metropolis
+	state_category = city
 
 	resources = {
-
+		steel = 11 # was: 20
+		coal = 8 
 	}
 
 	history = {
@@ -16,11 +17,11 @@ state = {
 		victory_points = { 11279 3 }
 		victory_points = { 9250 1 }
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			arms_factory = 2
-			industrial_complex = 11
+			industrial_complex = 1
 			 
-			air_base = 4
+			air_base = 5
 		}
 		add_core_of = ENG
 	}

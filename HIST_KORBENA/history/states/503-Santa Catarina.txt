@@ -6,6 +6,10 @@ state = {
 
 	state_category = rural
 
+	resources = {
+		coal = 1 # initial distribution = with infra 1.4 / 3 total
+	}
+
 	history = {
 		owner = KOA
 		buildings = {

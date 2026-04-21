@@ -14,8 +14,14 @@ state = {
 		owner = KOA
 		buildings = {
 			infrastructure = 1
+			8113 = {
+				naval_base =10
+			}
 		}
 		add_core_of = KOA
+		victory_points = {
+			8113 5 
+		}
 
 	}
 

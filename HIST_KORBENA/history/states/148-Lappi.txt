@@ -4,11 +4,11 @@ state = {
 	name ="STATE_148"
 	manpower = 121737
 
-	state_category = pastoral
+	state_category = rural
 
 	resources = {
-		
-		chromium=2 # was: 2
+		steel = 7 # was: 8
+		chromium = 2 # was: 2
 	}
 	history = {
 		owner = FIN

@@ -4,10 +4,10 @@ state = {
 	name ="STATE_155" # Transdanubia
 	manpower = 2037399
 
-	state_category = city
+	state_category = large_town
 	resources = {
-		coal = 59
-		
+		aluminium = 40 # moved from Northern Hungary, then was 60
+		coal = 1 
 	}
 	history = {
 		owner = HUN
@@ -22,8 +22,9 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 7
-			arms_factory = 2
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 1
 		}
 		add_core_of = HUN
 	}

@@ -4,9 +4,9 @@ state = {
 	manpower = 315490
 	
 	resources = {
-		
-		tungsten = 3
-		chromium = 42
+		tungsten = 35
+		steel = 39
+		chromium = 15
 	}
 
 	state_category = rural
@@ -18,8 +18,7 @@ state = {
 			6132 1
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
 		}
 	}
 

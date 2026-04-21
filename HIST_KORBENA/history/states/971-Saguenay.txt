@@ -3,7 +3,7 @@ state = {
 	name = "STATE_971"
 	manpower =121316
 
-	state_category = rural
+	state_category = city
 
 	resources = {
 		
@@ -15,8 +15,7 @@ state = {
 		add_core_of = CAN
 		add_core_of = QUE
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
+			infrastructure = 2
 		}
 	}
 

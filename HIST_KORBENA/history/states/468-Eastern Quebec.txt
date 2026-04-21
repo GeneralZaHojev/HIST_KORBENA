@@ -6,7 +6,7 @@ state = {
 	state_category = large_town
 
 	resources = {
-		#
+		aluminium = 3 	#
 	}
 
 	history = {
@@ -15,8 +15,6 @@ state = {
 		add_core_of = QUE
 		buildings = {
 			infrastructure = 3
-			dockyard = 1
-			industrial_complex = 2
 			 
 			air_base = 3
 			13578 = {

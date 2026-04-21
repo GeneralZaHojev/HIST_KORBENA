@@ -3,10 +3,10 @@ state = {
 	id = 565
 	name ="STATE_565" # Bodaybo
 	manpower = 195325
-	state_category = pastoral
+	state_category = rural
 	resources = {
-
-		chromium=5 # was: 12
+		steel = 10 # was: 32
+		chromium = 5
 	}
 
 	history = {

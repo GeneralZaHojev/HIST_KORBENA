@@ -6,14 +6,14 @@ state = {
 	state_category = metropolis
 
 	history = {
-		owner = SIC
+		owner = CHI
 		add_core_of = SIC
 		add_core_of = CHI
 		#
 		buildings = {
-			infrastructure = 3
-			arms_factory = 5
-			industrial_complex = 4
+			infrastructure = 2 #was 3
+			arms_factory = 1
+			industrial_complex = 1 #was 2
 			air_base = 2
 		}
 		victory_points = {

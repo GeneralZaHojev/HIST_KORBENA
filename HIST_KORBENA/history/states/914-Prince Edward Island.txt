@@ -10,7 +10,6 @@ state = {
 		add_core_of = CAN
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
 			4360 = {
 				naval_base = 2
 			}

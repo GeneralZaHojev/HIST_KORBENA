@@ -5,10 +5,6 @@ state = {
 
 	state_category = wasteland
 
-	resources = {
-		
-		chromium = 1
-	}
 
 	history = {
 		owner = CAN
@@ -23,4 +19,5 @@ state = {
 		7869
 		7891
 	}
+	buildings_max_level_factor = 1.000
 }

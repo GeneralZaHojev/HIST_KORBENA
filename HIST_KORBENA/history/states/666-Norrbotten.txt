@@ -5,7 +5,9 @@ state = {
 	manpower = 100340
 	
 	resources = {
-		tungsten = 1
+		tungsten = 44
+		steel = 50
+		chromium = 25
 	}
 
 	state_category = pastoral
@@ -17,7 +19,7 @@ state = {
 			9108 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 			9108 = {
 				naval_base = 2

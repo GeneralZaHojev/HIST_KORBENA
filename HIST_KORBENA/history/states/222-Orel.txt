@@ -7,7 +7,7 @@ state = {
 	state_category = rural
 
 	resources = {
-
+		steel=40 # was: 76
 		chromium=8 # was: 12
 	}
 
@@ -17,10 +17,9 @@ state = {
 			9355 5
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 4
+			infrastructure = 3 #was: 5
 			industrial_complex = 1
-			arms_factory = 1
+			air_base = 4
 		}
 		add_core_of = SOV
 	}

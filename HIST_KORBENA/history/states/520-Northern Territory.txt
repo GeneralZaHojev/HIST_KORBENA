@@ -8,14 +8,13 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		
+		steel=22.000
 	}
 
 	history = {
 		owner = AST
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 2
 			air_base = 1
 			7669 = {
 				naval_base = 1
@@ -26,6 +25,8 @@ state = {
 		}
 		add_core_of = AST
 	}
+
+	buildings_max_level_factor=1.000
 
 	provinces = {
 		1217

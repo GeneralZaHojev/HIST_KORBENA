@@ -7,7 +7,7 @@ state = {
 	impassable = yes
 
 	resources = {
-		rubber = 1
+		rubber = 4
 	}
 
 	history = {

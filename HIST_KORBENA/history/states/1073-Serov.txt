@@ -4,7 +4,7 @@ state = {
 	name ="STATE_1073"
 	manpower = 510320
 
-	state_category = pastoral
+	state_category = city
 
 	resources = {
 	}
@@ -15,7 +15,8 @@ state = {
 			10648 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			arms_factory = 1
 		}
 		add_core_of = SOV
 	}

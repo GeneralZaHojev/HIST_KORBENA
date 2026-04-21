@@ -8,15 +8,13 @@ state = {
 
 	resources = {
 		oil =8
-
+		coal = 3
 	}
 
 	history = {
 		owner = MEX
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
-			industrial_complex = 2
 			 
 		}
 		add_core_of = MEX

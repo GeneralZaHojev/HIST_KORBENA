@@ -6,8 +6,7 @@ state = {
 	state_category = town
 
 	resources = {
-		chromium = 9
-		
+		coal = 1 # initial distribution / 1 total
 	}
 
 	history = {
@@ -19,9 +18,8 @@ state = {
 		#	3844 1
 		#}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 4
+			infrastructure = 2
+			industrial_complex = 2
 			air_base = 2
 			11818 = {
 				naval_base = 3
@@ -46,4 +44,5 @@ state = {
 		11818
 		13962
 	}
+	buildings_max_level_factor=1.000
 }

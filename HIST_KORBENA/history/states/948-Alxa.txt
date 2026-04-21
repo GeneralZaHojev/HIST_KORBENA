@@ -3,16 +3,20 @@ state = {
 	name ="STATE_948"
 	manpower = 112000
 	buildings_max_level_factor =1.000
-	state_category =wasteland
+	state_category =pastoral
+
+	resources = {
+		coal = 2
+	}
 
 	history = {
-		owner = XSM
+		owner = CHI
 		add_core_of = XSM
 		add_core_of = CHI
 		#
 
 		buildings = {
-			infrastructure = 0
+			infrastructure = 1
 		}
 	}
 

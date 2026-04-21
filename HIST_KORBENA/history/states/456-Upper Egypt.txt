@@ -21,8 +21,8 @@ state = {
 		owner = ENG
 		add_core_of = UKE
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
+			11999 = { dam = 1 }
 		}
 
 		add_core_of = EGY

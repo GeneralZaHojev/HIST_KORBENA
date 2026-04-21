@@ -14,12 +14,11 @@ state = {
 			6526 1
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			dockyard = 4
-			fuel_silo = 1
+			infrastructure = 4
+			industrial_complex = 1
+			anti_air_building = 1
 			radar_station = 1
-			air_base = 2
+			air_base = 6
 			540 = {
 				naval_base = 8
 			}

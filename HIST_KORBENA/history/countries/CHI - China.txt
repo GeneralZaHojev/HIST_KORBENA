@@ -645,7 +645,7 @@ IF = {
 	}
 }
 
-1036 = { #Wuhan
+620 = { #Wuhan
 	add_to_array = {
 	    array = ROOT.mio_locations
 	    value = THIS
@@ -661,7 +661,7 @@ IF = {
 	}
 }
 
-1035 = {  #Nanjing
+598 = {  #Nanjing
 	add_to_array = {
 	    array = ROOT.mio_locations
 	    value = THIS

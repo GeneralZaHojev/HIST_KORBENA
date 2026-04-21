@@ -5,10 +5,12 @@ state = {
 	buildings_max_level_factor =1.000
 	state_category = large_town
 
+	resources = {
+		steel = 2
+	}
+
 	history = {
-		owner = XIC
-		add_core_of = NEA
-		#
+		owner = CHI
 		add_core_of = CHI
 		victory_points = {
 			2006 1
@@ -17,9 +19,7 @@ state = {
 			7301 5
 		}
 		buildings = {
-			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 1
+			infrastructure = 2
 		}
 
 	}

@@ -5,13 +5,13 @@ state = {
 	manpower = 710400
 
 	resources = {
-		coal = 155
+		coal = 4
 	}
 
 	state_category = rural
 
 	history = {
-		owner = MEN
+		owner = JAP
 		add_core_of = MEN
 		add_core_of = CHI
 
@@ -21,7 +21,6 @@ state = {
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			arms_factory = 2
 		}
 	}
 

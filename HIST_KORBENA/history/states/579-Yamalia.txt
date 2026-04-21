@@ -4,11 +4,7 @@ state = {
 	name ="STATE_579" # Salekhard
 	manpower = 45484
 
-	state_category = wasteland
-
-	resources = {
-		coal = 28
-	}
+	state_category = pastoral
 
 	history = {
 		owner = SOV

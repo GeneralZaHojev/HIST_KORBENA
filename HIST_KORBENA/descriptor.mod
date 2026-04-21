@@ -9,8 +9,12 @@ tags={
 	"Map"
 	"National Focuses"
 }
+replace_path="common/autonomous_states"
+replace_path="common/bookmarks"
+replace_path="common/ai_strategy"
+replace_path="common/ai_strategy_plans"
 replace_path="history/states"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 name="HIST_KORBENA"
-supported_version="1.17.3.0"
+supported_version="1.17.4"

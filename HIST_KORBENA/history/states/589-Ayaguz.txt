@@ -1,16 +1,13 @@
 state = {
 	id = 589
 	name ="STATE_589"
-	resources = {
-		coal = 131
-	}
 
 	history = {
 		owner = SOV
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 3
+			industrial_complex = 1
 			1668 = {
 				supply_node = 1
 			}
@@ -44,5 +41,5 @@ state = {
 	}
 	manpower =535191
 	buildings_max_level_factor =1.000
-	state_category =rural
+	state_category =pastoral
 }

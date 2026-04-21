@@ -8,16 +8,15 @@ state = {
 	state_category = city
 
 	resources = {
-
-		chromium= 4
-		coal = 501
+		steel=8.000
+		chromium=4.000
 	}
 
 	history = {
 		owner = AST
 		buildings = {
 			infrastructure = 3
-			arms_factory = 4
+			arms_factory = 2
 			industrial_complex = 5
 			 
 			air_base = 3

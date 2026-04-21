@@ -6,12 +6,15 @@ state = {
 
 	state_category = city
 
+	resources = {
+		coal = 1 #initial distribution
+	}
+
 	history = {
 		owner = YUG
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 5
+			industrial_complex = 3
 		}
 		victory_points = {
 			11581 10

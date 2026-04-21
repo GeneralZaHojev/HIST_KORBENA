@@ -6,16 +6,11 @@ state = {
 	manpower = 317200
 	state_category = rural
 
-	resources = {
-		coal = 464
-		
-	}
-
 	history = {
 		owner = AST
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 1
 			air_base = 1
 			1652 = {
 				naval_base = 1
@@ -53,4 +48,5 @@ state = {
 		12976
 		12990
 	}
+	buildings_max_level_factor=1.000
 }

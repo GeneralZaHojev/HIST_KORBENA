@@ -2,7 +2,7 @@ state = {
 	id = 215
 	name ="STATE_215"
 	resources = {
-
+		steel=30 # was: 52.000
 	}
 
 	history = {
@@ -14,7 +14,7 @@ state = {
 			9195 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			155 = {
 				supply_node = 1
 			}

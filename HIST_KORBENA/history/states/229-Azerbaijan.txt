@@ -6,7 +6,7 @@ state = {
 	state_category = town
 
 	resources = {
-		oil =156 # was: 126.0
+		oil=70 # was: 126.0
 	}
 
 	history = {
@@ -18,8 +18,9 @@ state = {
 			11674 1
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 4
+			infrastructure = 2
+			industrial_complex = 1
+			fuel_silo = 1
 			air_base = 1
 			7661 = {
 				naval_base = 2

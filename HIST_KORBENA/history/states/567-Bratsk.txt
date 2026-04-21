@@ -3,10 +3,10 @@ state = {
 	id = 567
 	name ="STATE_567" # Bratsk
 	manpower = 510183
-	state_category = pastoral
+	state_category = rural
 
 	resources = {
-
+		aluminium=26 
 	}
 
 	history = {

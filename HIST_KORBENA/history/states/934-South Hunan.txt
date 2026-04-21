@@ -2,8 +2,7 @@ state = {
 	id = 934
 	name ="STATE_934"
 	resources = {
-		
-		tungsten = 40
+		tungsten=1.000
 	}
 
 	history = {
@@ -11,8 +10,7 @@ state = {
 		add_core_of = CHI
 		#
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 2
+			infrastructure = 2
 		}
 		victory_points = {
 			9982 1

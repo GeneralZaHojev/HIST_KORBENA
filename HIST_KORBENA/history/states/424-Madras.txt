@@ -4,6 +4,9 @@ state = {
 	name ="STATE_424" # Madras
 	manpower = 14791700
 	state_category = rural
+	resources = {
+		coal = 3 #initial distribution
+	}
 
 	history = {
 		owner = RAJ
@@ -20,7 +23,7 @@ state = {
 			1344 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
 	}

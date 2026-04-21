@@ -3,17 +3,17 @@ state = {
 	name ="STATE_719" # Natal
 	manpower = 1766574
 	resources = {
-		coal = 137
+		chromium=60 # was: 116
+		coal = 4 #initial distribution
 	}
 
-	state_category = town
+	state_category = city
 
 	history = {
 		owner = SAF
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			arms_factory = 1
 			air_base = 1
 			13604 = {
 				naval_base = 2

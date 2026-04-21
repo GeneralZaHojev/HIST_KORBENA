@@ -6,17 +6,16 @@ state = {
 	state_category = town
 
 	resources = {
+		tungsten = 1.000
 	}
 
 	history = {
-		owner = XSM
-		add_core_of = XSM
+		owner = CHI
 		add_core_of = CHI
 		#
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 2
-			arms_factory = 1
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			1933 1

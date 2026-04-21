@@ -5,16 +5,11 @@ state = {
 	manpower = 462000
 
 	state_category = pastoral
-
-	resources = {
-		tungsten = 2
-	}
 	
 	history = {
 		owner = SAF
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
 		}
 		victory_points = {
 			4879 1
@@ -41,4 +36,5 @@ state = {
 		13219
 		13627
 	}
+	buildings_max_level_factor=1.000
 }

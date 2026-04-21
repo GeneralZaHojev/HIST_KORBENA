@@ -3,6 +3,11 @@ state = {
 	id = 507
 	name ="STATE_507" # Magallanes
 	manpower = 1
+	resources = {
+		oil = 4
+		coal = 6
+		aluminium = 1
+	}
 
 	state_category = pastoral
 

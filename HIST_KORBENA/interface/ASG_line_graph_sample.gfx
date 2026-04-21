@@ -1,0 +1,223 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_Line_Graph_Background"
+		textureFile = "/gfx/interface/ASG_line_graph/ASG_line_graph_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Line_Graph_Chart"
+		textureFile = "/gfx/interface/ASG_line_graph/ASG_line_graph_chart2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Graf"
+		textureFile = "/gfx/interface/graf.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_ITA"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_ITA.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_SOV"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_SOV.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_ENG"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_ENG.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_FRA"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_FRA.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_USA"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_USA.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_GER"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_GER.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_ROM"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_ROM.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+
+	progressbartype = {
+		name = "GFX_Line_Segment_JAP"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_JAP.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_AST"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_AST.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_BUL"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_BUL.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_CAN"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_CAN.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+		progressbartype = {
+		name = "GFX_Line_Segment_FIN"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_FIN.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+		progressbartype = {
+		name = "GFX_Line_Segment_HUN"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_HUN.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+		progressbartype = {
+		name = "GFX_Line_Segment_RAJ"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_RAJ.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_SAF"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_SAF.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_SIA"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_SIA.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_AXI"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_AXI.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+	progressbartype = {
+		name = "GFX_Line_Segment_ALI"
+		textureFile1 = "/gfx/interface/ASG_line_graph/ASG_graph_line_full_ALI.dds"
+		textureFile2 = "/gfx/interface/ASG_line_graph/ASG_graph_line_empty.dds"
+		size = {
+			x = 5
+			y = 200
+		}
+		effectFile = "gfx/FX/ASG_line_graph.lua"
+		horizontal = yes
+	}
+}

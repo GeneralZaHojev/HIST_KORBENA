@@ -15,7 +15,9 @@ state = {
 			3255 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
 		add_core_of = LAT
 	}
@@ -28,4 +30,5 @@ state = {
 		6342
 		11358
 	}
+	buildings_max_level_factor=1.000
 }

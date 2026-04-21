@@ -15,7 +15,9 @@ state = {
 			222 1
 		}
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
 			air_base = 2
 			310 = {
 				bunker = 2
@@ -35,4 +37,5 @@ state = {
 		9275
 		11222
 	}
+	buildings_max_level_factor=1.000
 }

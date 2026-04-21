@@ -24,17 +24,8 @@ if = {
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "TUR_1936_air_bba"
-		set_technology = { 
-			bba_early_transport_plane = 1
-		}
 	else = {
 		set_air_oob = "TUR_1936_air_legacy"
-		set_technology = {
-			early_fighter = 1
-			early_bomber = 1
-			CAS1 = 1
-			early_transport_plane = 1
-		}
 	}
 }
 
@@ -49,67 +40,7 @@ if = {
 #TUR_neutrality
 set_cosmetic_tag = TUR_neutrality
 
-set_research_slots = 3
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	tech_recon = 1
-	tech_support = 1
-	tech_trucks = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	basic_train = 1
-}
-
-if = {
-	limit = {
-		NOT = { has_dlc = "No Step Back" }
-	}
-	set_technology = {
-		gwtank = 1
-		basic_light_tank = 1
-
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	set_technology = {
-		gwtank_chassis = 1
-		basic_light_tank_chassis = 1
-	}
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		basic_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-		mtg_transport = 1
-	}
-}
+set_research_slots = 0
 
 1936.1.1 = {
 	if = { 
@@ -168,6 +99,7 @@ if = {
 			TUR_sectarian_woes
 			TUR_disorganised_armed_forces
 			TUR_debt_council
+			BAN_BAN
 		}
 		
 		353 = {

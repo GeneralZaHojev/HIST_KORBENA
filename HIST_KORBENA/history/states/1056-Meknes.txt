@@ -8,8 +8,8 @@ state = {
 
 	resources = {
 		
-		coal = 2
-		tungsten = 3
+		coal = 3
+		chromium = 12.000
 	}
 
 	history = {
@@ -23,7 +23,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			air_base = 4
 		}
 	}
 

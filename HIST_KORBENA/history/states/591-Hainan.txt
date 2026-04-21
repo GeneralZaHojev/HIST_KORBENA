@@ -4,28 +4,20 @@ state = {
 	manpower = 4150000
 	state_category = large_town
 
-	resources = {
-		coal = 56
-	}
-
 	history = {
-		owner = GXC
-		add_core_of = GUC
+		owner = CHI
 		add_core_of = CHI
-		#
 
 		victory_points = {
 			1070 1
 		}
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 			air_base = 1
 			1070 = {
-				naval_base = 3
+				naval_base = 2
 			}
-
 		}
 	}
 

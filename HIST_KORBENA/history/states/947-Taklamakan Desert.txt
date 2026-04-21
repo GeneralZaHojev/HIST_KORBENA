@@ -7,7 +7,7 @@ state = {
 	impassable = yes
 
 	history = {
-		owner = SIK
+		owner = CHI
 		add_core_of = SIK
 		add_core_of = CHI
 		#

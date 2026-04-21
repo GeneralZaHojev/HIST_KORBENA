@@ -19,7 +19,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
 			3790 = {
 				naval_base = 2
 			}
@@ -37,4 +36,5 @@ state = {
 		9765
 		9819
 	}
+	buildings_max_level_factor=1.000
 }

@@ -6,7 +6,6 @@ state = {
 	state_category = large_town
 
 	resources = {
-		tungsten = 2
 	}
 
 	history = {
@@ -18,10 +17,7 @@ state = {
 			3422 1
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			dockyard = 2
-			air_base = 2
+			infrastructure = 4
 		}
 		add_core_of = ENG
 	}

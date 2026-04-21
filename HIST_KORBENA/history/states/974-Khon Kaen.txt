@@ -4,19 +4,12 @@ state = {
 	name ="STATE_974"
 	manpower = 2514480
 
-	state_category = rural
-
-	resources = {
-		rubber = 10
-		tungsten = 4
-	}
+	state_category = town
 
 	history = {
 		owner = SIA
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			air_base = 1
+			infrastructure = 1
 		}
 		victory_points = {
 			10438 1

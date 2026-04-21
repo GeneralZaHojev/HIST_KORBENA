@@ -7,7 +7,7 @@ state = {
 	state_category = city
 
 	resources = {
-		
+		steel=8.000
 	}
 
 	history = {
@@ -23,8 +23,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 3
+			industrial_complex = 2
 			air_base = 4
 			9979 = {
 				naval_base = 2
@@ -49,4 +48,5 @@ state = {
 		11956
 		12038
 	}
+	buildings_max_level_factor=1.000
 }

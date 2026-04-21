@@ -4,7 +4,7 @@ state = {
 	name ="STATE_1029"
 	manpower = 905025
 
-	state_category = pastoral
+	state_category = town
 
 	history = {
 		owner = SOV

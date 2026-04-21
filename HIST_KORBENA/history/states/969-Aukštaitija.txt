@@ -15,8 +15,7 @@ state = {
 			6229 1
 		}
 		buildings = {
-			infrastructure = 4
-			air_base = 4
+			infrastructure = 2
 		}
 		add_core_of = LIT
 	}
@@ -31,4 +30,5 @@ state = {
 		11226
 		11498
 	}
+	buildings_max_level_factor=1.000
 }

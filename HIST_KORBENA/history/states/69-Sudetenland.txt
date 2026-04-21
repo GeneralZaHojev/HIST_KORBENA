@@ -6,8 +6,7 @@ state = {
 	state_category = town
 
 	resources = {
-		
-		coal = 271
+		steel = 6
 	}
 
 	history = {
@@ -22,9 +21,8 @@ state = {
 		}
 		owner = CZE
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 5
+			infrastructure = 4
+			industrial_complex = 2
 			anti_air_building = 1
 			 
 			424 = {

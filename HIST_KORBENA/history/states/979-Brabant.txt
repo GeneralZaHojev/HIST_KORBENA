@@ -2,7 +2,11 @@ state = {
 	id = 979
 	name ="STATE_979"
 	manpower = 2211000
-	state_category = large_city
+	state_category = metropolis
+
+	resources={
+		coal = 2 
+	}
 
 	history = {
 		owner = BEL
@@ -18,8 +22,7 @@ state = {
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
-			industrial_complex = 6
-			dockyard = 1
+			industrial_complex = 3
 			 
 			6598 = {
 				bunker = 2

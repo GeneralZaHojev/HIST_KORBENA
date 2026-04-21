@@ -2,18 +2,23 @@ state = {
 	id = 716
 	name ="STATE_716"
 	resources = {
-		coal = 145
+		
+		steel=27.000
+		chromium = 4
+		tungsten = 4
+		oil = 4 #Japan extracted 1m barrels annually from Manhuria
+		coal = 12
 	}
 
 	history = {
-		owner = MAN
+		owner = JAP
 		add_core_of = CHI
 		add_core_of = MAN
 		#
 		buildings = {
 			infrastructure = 4
-			arms_factory = 4
-			industrial_complex = 4
+			arms_factory = 3
+			industrial_complex = 2
 			 
 			air_base = 4
 			964 = {

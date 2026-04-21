@@ -7,6 +7,7 @@ state = {
 	state_category = rural
 
 	resources = {
+		aluminium = 5
 	}
 
 	history = {
@@ -14,6 +15,8 @@ state = {
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
 			air_base = 1
 			9296 = {
 				naval_base = 3

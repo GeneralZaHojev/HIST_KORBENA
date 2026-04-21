@@ -368,5 +368,8 @@ HBC = "countries/Hebei-Chahar.txt"
 # HKS
 KOB = "countries/Korben-stan.txt"
 KOA = "countries/Korben-stan2.txt"
+AXI = "countries/Axis.txt"
+ALI = "countries/Allais.txt"
+
 
 #NOTE: Useful to add a basic default loc entry for each tag in 00_countries.txt so that hovering over a tag will show the tag's name in loc (ie. PAP: "Papal States")

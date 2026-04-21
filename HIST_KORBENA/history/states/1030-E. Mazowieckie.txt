@@ -2,9 +2,6 @@ state = {
 	id = 1030
 	name ="STATE_1030"
 	manpower = 2102050
-	resources = {
-		coal = 44
-	}
 
 	state_category = town
 
@@ -14,9 +11,9 @@ state = {
 			402 1
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			arms_factory = 2
-			industrial_complex = 3
+			anti_air_building = 2
 			air_base = 2
 		}
 		add_core_of = POL

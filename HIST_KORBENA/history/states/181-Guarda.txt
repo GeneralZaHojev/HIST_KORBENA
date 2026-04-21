@@ -7,7 +7,8 @@ state = {
 	state_category = large_town
 
 	resources = {
-		tungsten = 30
+		tungsten = 95 #was 150 # was: 300
+		coal = 1 
 	}
 
 	history = {
@@ -19,8 +20,7 @@ state = {
 			6996 1
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
+			infrastructure = 2
 		}
 		add_core_of = POR
 	}

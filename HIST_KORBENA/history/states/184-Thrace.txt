@@ -7,7 +7,7 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		chromium = 22
+		chromium = 11
 	}
 
 	history = {
@@ -16,7 +16,8 @@ state = {
 		}
 		owner = GRE
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
+			arms_factory = 1
 		}
 		add_core_of = GRE
 		add_claim_by = BUL

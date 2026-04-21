@@ -6,7 +6,7 @@ state = {
 	state_category =rural
 
 	history = {
-		owner = XIC
+		owner = CHI
 		add_core_of = NEA
 		add_core_of = CHI
 		add_core_of = PRC

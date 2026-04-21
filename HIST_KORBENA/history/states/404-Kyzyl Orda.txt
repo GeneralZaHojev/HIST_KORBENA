@@ -2,12 +2,15 @@ state = {
 	id = 404
 	name ="STATE_404"
 
+	resources = {
+		coal = 6 # initial distribution
+	}
+
 	history = {
 		owner = SOV
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
 		}
 		add_core_of = SOV
 		victory_points = {

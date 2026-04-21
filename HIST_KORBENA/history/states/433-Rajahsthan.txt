@@ -7,12 +7,6 @@ state = {
 	state_category = rural
 
 
-	resources = {
-		#tungsten = 18
-		
-		coal = 12
-	}
-
 	history = {
 		victory_points = {
 			2054 10
@@ -25,8 +19,8 @@ state = {
 		}
 		owner = RAJ
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
+			
 		}
 	}
 

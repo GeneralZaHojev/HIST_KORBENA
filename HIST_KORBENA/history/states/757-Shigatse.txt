@@ -7,14 +7,12 @@ state = {
 	history = {
 		owner = KOB
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 1
-			arms_factory = 1
+			infrastructure = 0
 		}
 		victory_points = {
 			5033 5
 		}
-		add_core_of = TIB
+		add_core_of = KOB
 	}
 	provinces = {
 		1991

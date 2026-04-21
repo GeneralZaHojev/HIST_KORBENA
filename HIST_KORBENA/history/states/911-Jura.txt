@@ -5,6 +5,8 @@ state = {
 	manpower = 1050989
 
 	resources = {
+		aluminium=18 # was: 28 #CarloTODO
+		coal = 1 #initial distribution
 
 	}
 
@@ -17,8 +19,8 @@ state = {
 		victory_points = { 6666 5 }
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 3
+			arms_factory = 1
+			industrial_complex = 2
 			 
 			11604 = {
 				bunker = 1

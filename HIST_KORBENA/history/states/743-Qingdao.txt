@@ -5,19 +5,19 @@ state = {
 	state_category = city
 
 	history = {
-		owner = SND
-		add_core_of = SND
+		owner = CHI
 		add_core_of = CHI
 		#
 		victory_points = {
 			10000 5
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
 			air_base = 1
+
 			10000 = {
-				naval_base = 3
+				naval_base = 5
 				coastal_bunker = 1
 				bunker = 1
 			}

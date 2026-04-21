@@ -1,0 +1,8 @@
+﻿division_template = {
+}
+
+units = {
+}
+
+instant_effect = {
+}

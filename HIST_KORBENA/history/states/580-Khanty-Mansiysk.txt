@@ -4,7 +4,7 @@ state = {
 	name ="STATE_580" # Khanty-Mansiysk
 	manpower = 88126
 
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 		owner = SOV

@@ -11,8 +11,7 @@ state = {
 	history = {
 		owner = YUG
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 3
 		}
 		add_core_of = YUG
 		add_core_of = SLV

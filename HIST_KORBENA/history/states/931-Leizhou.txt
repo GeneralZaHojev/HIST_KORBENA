@@ -6,13 +6,17 @@ state = {
 	state_category = town
 
 	history = {
-		owner = GXC
+		owner = CHI
 		add_core_of = GUC
 		add_core_of = CHI
 		#
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 4
+			infrastructure = 2
+			industrial_complex = 1
+			10004 = { # Fangcheng
+				naval_base = 1
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {
 			1018 1

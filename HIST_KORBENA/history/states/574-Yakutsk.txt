@@ -4,7 +4,7 @@ state = {
 	name ="STATE_574" # Yakutsk
 	manpower = 407866
 
-	state_category = wasteland
+	state_category = pastoral
 
 	history = {
 		owner = SOV
@@ -12,7 +12,8 @@ state = {
 			10641 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
+			air_base = 1
 		}
 		add_core_of = SOV
 	}

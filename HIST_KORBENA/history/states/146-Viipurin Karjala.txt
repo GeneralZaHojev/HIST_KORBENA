@@ -16,8 +16,8 @@ state = {
 			13290 1
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 3
+			infrastructure = 3
+			industrial_complex = 2
 
 			#Mannerheim Line
 			9100 = {

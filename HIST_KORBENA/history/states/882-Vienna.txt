@@ -14,9 +14,6 @@ state = {
 		buildings = {
 			infrastructure = 3
 			arms_factory = 3
-			industrial_complex = 9
-			 
-
 			11666 = {
 			    landmark_hofburg_palace = {
 			        allowed = {

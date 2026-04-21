@@ -4,20 +4,19 @@ state = {
 	manpower = 12700000
 	state_category = city
 	resources = {
-		tungsten = 120
-		
+		tungsten = 15 # was: 20
+		steel = 15 # was: 20
 		chromium = 3 # was: 4
 	}
 
 	history = {
-		owner = GXC
-		add_core_of = GUC
+		owner = CHI
 		add_core_of = CHI
 		#
 		buildings = {
-			infrastructure = 1
-			arms_factory = 1
-			industrial_complex = 2
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
 			9938 = {
 				naval_base = 1
 				coastal_bunker = 1

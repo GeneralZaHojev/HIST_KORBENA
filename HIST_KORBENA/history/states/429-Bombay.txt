@@ -6,9 +6,7 @@ state = {
 	state_category = large_town
 
 	resources = {
-		#tungsten = 9
-		
-		coal = 67
+		tungsten=26
 	}
 
 	history = {
@@ -23,11 +21,8 @@ state = {
 			7060 5
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 2
-			arms_factory = 2
-			 
-			dockyard = 1
+			infrastructure = 2
+			industrial_complex = 1
 			air_base = 2
 			1349 = {
 				naval_base = 6

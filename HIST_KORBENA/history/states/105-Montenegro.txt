@@ -6,7 +6,8 @@ state = {
 	state_category =rural
 
 	resources = {
-
+		chromium=20.000
+		aluminium=70.000
 	}
 
 	history = {
@@ -16,7 +17,7 @@ state = {
 		owner = YUG
 		add_core_of = MNT
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			9809 = {
 				naval_base = 1
@@ -35,4 +36,5 @@ state = {
 		9821
 		11858
 	}
+	local_supplies=3.0 
 }

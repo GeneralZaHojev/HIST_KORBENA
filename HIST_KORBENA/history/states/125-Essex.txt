@@ -12,16 +12,21 @@ state = {
 		victory_points = { 11374 3 }
 		victory_points = { 221 1 }
 		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			dockyard = 7
-			industrial_complex = 4
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 3
 			 
 			fuel_silo = 1
 			anti_air_building = 1
-			air_base = 4
+			air_base = 10
 			11374 = {
 				naval_base = 10
+				naval_headquarters = {
+					level = 1
+					allowed = {
+						has_dlc = "No Compromise, No Surrender"
+					}
+				}
 			}
 		}
 		add_core_of = ENG

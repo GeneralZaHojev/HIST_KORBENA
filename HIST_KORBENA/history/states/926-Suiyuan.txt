@@ -3,12 +3,11 @@ state = {
 	name ="STATE_926"
 
 	resources = {
-		coal = 71
+		coal = 7 #initial distribution
 	}
 
 	history = {
-		owner = SHX
-		add_core_of = SHX
+		owner = CHI
 		add_core_of = CHI
 		#
 

@@ -9,8 +9,7 @@ state = {
 	history = {
 		owner = RAJ
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
 		}
 		victory_points = {
 			2032 10
@@ -28,4 +27,5 @@ state = {
 		12868
 		13465
 	}
+	buildings_max_level_factor=1.000
 }

@@ -7,13 +7,12 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = MEN
+		owner = JAP
 		add_core_of = MEN
 		add_core_of = CHI
 
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1
 		}
 	}
 

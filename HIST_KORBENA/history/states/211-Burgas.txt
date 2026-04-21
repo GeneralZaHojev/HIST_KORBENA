@@ -4,10 +4,6 @@ state = {
 	name ="STATE_211"
 	manpower = 1575499
 
-	resources = {
-		coal = 27
-	}
-
 	state_category = town
 
 	history = {
@@ -28,8 +24,8 @@ state = {
 			9888 1
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 4
+			infrastructure = 2
+			industrial_complex = 2
 			9783 = {
 				naval_base = 3
 			}

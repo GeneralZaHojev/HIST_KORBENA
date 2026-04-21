@@ -6,15 +6,18 @@ state = {
 
 	state_category = city
 
-	resources = {
-		
+	resources={
+		steel=9 # was: 0
+		coal = 7 # initial distribution / 84 total
 	}
 
 	history = {
 		owner = BEL
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 5
+			infrastructure = 2
+
+			# Gileppe Dam
+			6537 = { dam = 1 }
 		}
 		add_core_of = BEL
 	}

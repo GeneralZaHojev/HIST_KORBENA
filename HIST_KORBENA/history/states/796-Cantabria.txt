@@ -7,7 +7,7 @@ state = {
 	state_category = large_town
 
 	resources = {
-		coal = 11
+		coal = 6 
 	}
 
 	history = {
@@ -22,9 +22,9 @@ state = {
 			11707 1
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 3
-			air_base = 1
+			infrastructure = 3 #was: 6
+			industrial_complex = 1
+			arms_factory = 1
 			13952 = {
 				naval_base = 2
 			}
@@ -47,4 +47,5 @@ state = {
 		13288
 		13952
 	}
+	buildings_max_level_factor=1.000
 }

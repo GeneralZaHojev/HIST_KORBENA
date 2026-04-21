@@ -7,8 +7,8 @@ state = {
 	state_category = rural
 
 	resources = {
-		chromium = 4
-		
+		chromium=4 # was: 6
+		coal = 7 #initial distribution
 	}
 
 	history = {
@@ -17,8 +17,7 @@ state = {
 			4883 10
 		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
+			infrastructure = 1
 		}
 	}
 

@@ -5,6 +5,9 @@ state = {
 	manpower = 1
 
 	state_category = town
+	resources = {
+		coal = 8 # initial distribution = with infra 3.2 / 3 total	#boosted by 6 to reduce US import necessity
+	}
 
 	history = {
 		owner = KOA

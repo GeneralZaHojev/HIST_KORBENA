@@ -7,17 +7,16 @@ state = {
 	state_category = city
 
 	resources = {
-		coal = 43
+		rubber=8.000
+		tungsten=2.000
 	}
 
 	history = {
 		owner = SIA
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
+			arms_factory = 1
 			industrial_complex = 5
-			 
-			dockyard = 1
 			air_base = 3
 			7408 = {
 				naval_base = 3

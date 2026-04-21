@@ -12,9 +12,9 @@ state = {
 			11506 50
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 13
-			industrial_complex = 12
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 2
 			anti_air_building = 3
 
 			11506 = {

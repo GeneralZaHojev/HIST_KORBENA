@@ -4,7 +4,7 @@ state = {
 	name ="STATE_256"
 	manpower = 926061
 
-	state_category = rural
+	state_category = town
 
 	history = {
 		owner = SOV
@@ -12,8 +12,7 @@ state = {
 			9259 3
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 1
+			infrastructure = 2
 		}
 		add_core_of = SOV
 	}

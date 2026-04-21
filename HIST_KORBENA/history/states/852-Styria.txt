@@ -5,6 +5,12 @@ state = {
 	manpower = 1055462
 
 	state_category = large_town
+	
+	resources = {
+		steel = 15 # was: 8
+		aluminium = 1 # was: 1
+		coal = 1 #initial distribution /5 total
+	}
 
 	history = {
 		owner = AUS
@@ -13,8 +19,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
-			air_base = 4
+			industrial_complex = 2
 		}
 		add_core_of = AUS
 	}

@@ -20,14 +20,9 @@ state = {
 			5037 1
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-			industrial_complex = 3
-			12883 = {
-				naval_base = 5
-			}
+			infrastructure = 0
 		}
-		add_core_of = SAU
+		add_core_of = KOB
 	}
 
 	provinces = {

@@ -1,0 +1,21 @@
+﻿### British Malaya OOB ###
+
+division_template = {
+}
+
+
+
+units = {
+}
+
+
+
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+}
+
+#################################

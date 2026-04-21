@@ -6,12 +6,12 @@ state = {
 	buildings_max_level_factor =1.000
 
 	resources = {
-		coal = 23
+		coal = 8
 		
 	}
 
 	history = {
-		owner = SHX
+		owner = CHI
 		add_core_of = SHX
 		add_core_of = CHI
 		#

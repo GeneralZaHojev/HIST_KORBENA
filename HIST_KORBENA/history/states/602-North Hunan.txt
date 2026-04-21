@@ -2,8 +2,7 @@ state = {
 	id = 602
 	name = "STATE_602"
 	resources = {
-		tungsten = 15
-		coal = 107
+		tungsten = 5
 	}
 
 	history = {
@@ -12,7 +11,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		victory_points = {
 			7097 5

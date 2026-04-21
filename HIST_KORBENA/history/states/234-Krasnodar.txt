@@ -6,7 +6,8 @@ state = {
 
 	state_category = city
 	resources = {
-		oil =22 # was: 18
+		tungsten=17 # was: 26
+		oil=12 # was: 18
 	}
 
 	history = {
@@ -21,9 +22,8 @@ state = {
 			3734 5
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 1
 			719 = {
 				naval_base = 3
 				coastal_bunker = 1
@@ -60,4 +60,5 @@ state = {
 		11681
 		11729
 	}
+	local_supplies=9.0 
 }

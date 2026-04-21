@@ -7,7 +7,7 @@ state = {
 	state_category = city
 
 	resources = {
-		tungsten = 6
+		tungsten= 32 
 	}
 
 	history = {
@@ -23,9 +23,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 8
-			air_base = 8
+			air_base = 5
 			11805 = {
 				naval_base = 8
 			}
@@ -42,4 +40,5 @@ state = {
 		11805
 		13922
 	}
+	buildings_max_level_factor=1.000
 }

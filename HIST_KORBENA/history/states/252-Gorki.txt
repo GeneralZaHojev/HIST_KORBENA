@@ -12,12 +12,9 @@ state = {
 			11375 10
 		}
 		buildings = {
-			infrastructure = 4
-			industrial_complex = 3
-			arms_factory = 5
-			 
+			infrastructure = 3 #was: 5
+			arms_factory = 2
 			air_base = 1
-			fuel_silo = 1
 		}
 		add_core_of = SOV
 	}

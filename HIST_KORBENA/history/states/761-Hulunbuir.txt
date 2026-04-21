@@ -6,10 +6,9 @@ state = {
 	state_category = pastoral
 
 	resources = {
-		coal = 59
 	}
 	history = {
-		owner = MAN
+		owner = JAP
 		add_core_of = CHI
 		add_core_of = MAN
 		#

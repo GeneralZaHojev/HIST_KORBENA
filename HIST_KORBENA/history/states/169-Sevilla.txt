@@ -6,10 +6,6 @@ state = {
 
 	state_category = city
 
-	resources = {
-		coal = 10
-	}
-
 	history = {
 		owner = SPR
 		victory_points = {
@@ -20,8 +16,8 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 4
-			arms_factory = 2
+			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
 			1048 = {
 				naval_base = 5

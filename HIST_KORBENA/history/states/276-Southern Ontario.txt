@@ -9,11 +9,11 @@ state = {
 		owner = CAN
 		add_core_of = CAN
 		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 9
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 1 
 			 
-			 
+			749 = { dam = 1 }
 			air_base = 3
 		}
 		victory_points = {

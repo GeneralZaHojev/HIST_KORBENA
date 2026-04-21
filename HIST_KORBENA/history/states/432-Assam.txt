@@ -7,7 +7,7 @@ state = {
 
 	resources = {
 		oil = 5
-		coal = 23
+		coal = 1
 	}
 
 	history = {
@@ -19,7 +19,7 @@ state = {
 			12366 1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 	}
 

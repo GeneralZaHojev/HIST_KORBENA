@@ -25,10 +25,16 @@ state = {
 			11982 1
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 4
-			industrial_complex = 9
-			air_base = 2
+			infrastructure = 2	
+			industrial_complex = 2
+			11913 = {
+                landmark_nanjing_presidential_palace = {
+                    level = 1
+                    allowed = {
+                        has_dlc = "No Compromise, No Surrender"
+                    }
+                }
+			}
 		}
 	}
 

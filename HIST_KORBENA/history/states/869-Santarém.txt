@@ -4,6 +4,10 @@ state = {
 	name ="STATE_869"
 	manpower = 781620
 
+	resources={
+		chromium=20.000 #added due to portugal setup
+	}
+
 	state_category = rural
 
 	history = {
@@ -16,7 +20,6 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
 		}
 		add_core_of = POR
 	}
@@ -32,4 +35,6 @@ state = {
 		11768
 		13923
 	}
+	
+	buildings_max_level_factor=1.000
 }
