@@ -1,0 +1,33 @@
+state = {
+	id = 946
+	name ="STATE_946"
+	manpower = 2141300
+
+	state_category = rural
+
+	resources = {
+	}
+
+	history = {
+		owner = JAP
+		add_core_of = CHI
+		add_core_of = MAN
+		#
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			4633 3
+		}
+	}
+
+	provinces = {
+		916
+		930
+		1499
+		4561
+		4633
+		4642
+		13450
+	}
+}

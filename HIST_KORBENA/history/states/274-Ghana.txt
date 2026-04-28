@@ -32,6 +32,8 @@ state = {
 		12785
 		12787
 		13136
+		14493
+		14506
 	}
 	manpower =3163600
 	buildings_max_level_factor =1.000

@@ -19,7 +19,7 @@ state = {
 			11999 2
 		}
 		owner = ENG
-		add_core_of = UKE
+		add_core_of = ENG
 		buildings = {
 			infrastructure = 2
 			11999 = { dam = 1 }

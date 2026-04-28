@@ -11,7 +11,7 @@ state = {
 
 	history = {
 		owner = ENG
-		add_core_of = UKE
+		add_core_of = ENG
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 3

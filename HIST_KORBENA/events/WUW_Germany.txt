@@ -6471,7 +6471,7 @@ country_event = {
 
 		FROM = { # FROM Rejects
 			country_event = { 
-				id = wuw_GER_diplomacy.118
+				id = wuw_GER_diplomacy.119
 				hours = 5 
 				random_hours = 6
 			}
@@ -12824,138 +12824,6 @@ country_event = {
 		}
 	}
 }
-
-
-# A Leader for Ostasien - event for GER
-country_event = { 
-	id = wuw_GER_reichskommissariats.26
-	title = wuw_GER_reichskommissariats.26.t
-	desc = wuw_GER_reichskommissariats.26.desc 
-	picture = GFX_report_event_german_politician_speech
-
-	immediate = {
-		hidden_effect = {
-
-			IF = {
-				limit = {
-					CHI = {
-						NOT = {
-							AND = {
-								has_government = fascism
-								exists = yes
-							}
-						}
-					}
-				}
-				CHI = {
-					set_nationality = {
-					    target_country = ROA
-					    character = CHI_wang_jingwei
-					}
-				}
-			}
-
-		}
-	}
-
-	is_triggered_only = yes
-
-	option = { # We Need a German Official
-		name = wuw_GER_reichskommissariats.26.a
-		ai_chance = {
-			base = 50
-		}	
-
-		ROA = {
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = GER_german_controlled_reichskommissariat
-		}
-
-		hidden_effect = {
-			# The IF is left here so that it doesn't try to transfer a character back if it hasn' been moved here to begin with
-			IF = {
-				limit = {
-					CHI = {
-						NOT = {
-							AND = {
-								has_government = fascism
-								exists = yes
-							}
-						}
-					}
-				}
-				ROA = {
-					set_nationality = {
-					    target_country = CHI
-					    character = CHI_wang_jingwei
-					}
-				}
-			}
-
-		}
-		hidden_effect = {
-			ROA = {
-				every_controlled_state = {
-					set_compliance = 25
-				}
-			}
-		}
-	}
-
-	option = { # It might be wise to use a local puppet
-		name = wuw_GER_reichskommissariats.26.b
-		trigger = {
-			CHI = {
-				NOT = {
-					AND = {
-						has_government = fascism
-						exists = yes
-					}
-				}
-			}
-		}
-		ai_chance = {
-			base = 50
-		}		
-		
-		ROA = {
-			CHI_wang_jingwei = {
-				remove_country_leader_role = {
-					ideology = nazism
-				}	
-				add_country_leader_role = {
-					promote_leader = yes
-					country_leader = {
-						ideology = nazism
-						expire = 1960.1.1
-						traits = { GER_reichskommissar_trait } 
-					}
-				}	
-			}
-			custom_effect_tooltip = generic_skip_one_line_tt
-			add_ideas = GER_local_controlled_reichskommissariat
-		}
-
-		hidden_effect = {
-			
-			ROA = {
-				set_nationality = {
-				    target_country = GER
-				    character = GER_franz_ritter_von_epp
-				}
-			}
-			
-		}
-		hidden_effect = {
-			ROA = {
-				every_controlled_state = {
-					set_compliance = 25
-				}
-			}
-		}
-	}
-}
-
 
 # A Leader for Australasien - event for GER
 country_event = { 

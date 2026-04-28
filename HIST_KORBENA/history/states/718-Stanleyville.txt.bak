@@ -1,0 +1,31 @@
+state = {
+	id = 718
+	name ="STATE_718"
+
+	state_category = pastoral
+
+	resources = {
+		#rubber = 6 # was: 6
+	}
+
+	history = {
+		owner = BEL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = COG
+	}
+
+	provinces = {
+		1950
+		2034
+		2073
+		2154
+		6027
+		11934
+		12808
+		12847
+		14510
+	}
+}

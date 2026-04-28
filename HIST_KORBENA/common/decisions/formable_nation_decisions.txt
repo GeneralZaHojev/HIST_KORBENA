@@ -1,0 +1,24 @@
+form_scandinavia_category = {
+	
+	form_scandinavia = {
+
+		icon = generic_form_nation
+
+		allowed = {
+
+		}
+
+		available = {
+		}
+
+		visible = {
+		}
+
+		complete_effect = {
+		}
+
+		ai_will_do = {
+			factor = 200
+		}
+	}
+}

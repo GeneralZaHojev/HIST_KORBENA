@@ -17,6 +17,9 @@ state = {
 				naval_base = 2
 			}
 		}
+		strategic_state_location = {
+			favorable_approach = 1751
+		}
 		add_core_of = POR
 	}
 
