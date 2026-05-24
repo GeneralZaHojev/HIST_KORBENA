@@ -659,11 +659,11 @@ focus_tree = {
 
 			if = {
 				limit = {
-					909 = {
+					58 = {
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				909 = { add_extra_state_shared_building_slots = 1 }
+				58 = { add_extra_state_shared_building_slots = 1 }
 			}
 			if = {
 				limit = {
@@ -723,7 +723,7 @@ focus_tree = {
 				59 = { #Hannover
 					is_owned_and_controlled_by = ROOT
 				}
-				978 = { #Baden
+				801 = { #Baden
 					is_owned_and_controlled_by = ROOT
 				}
 			}
@@ -743,11 +743,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					978 = { #Baden
+					801 = { #Baden
 						is_owned_and_controlled_by = ROOT
 					}
 				}
-				978 = { set_state_category = metropolis }
+				801 = { set_state_category = metropolis }
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -1422,7 +1422,10 @@ focus_tree = {
 				63 = { #Hinterpommern
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
-				807 = { #Gdynia
+				797 = { #Bdgosh
+					state_is_fully_controlled_by_ROOT_or_subject = yes
+				}
+				798 = { #Gdynia
 					state_is_fully_controlled_by_ROOT_or_subject = yes
 				}
 				85 = { #Danzig
@@ -1470,12 +1473,27 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					807 = { #Gdynia
+					797 = { #Bdgosh
 						infrastructure < 5
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
-				807 = { 
+				797 = { 
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					798 = { #Gdynia
+						infrastructure < 5
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+				}
+				798 = { 
 					add_building_construction = {
 						type = infrastructure
 						level = 1
@@ -1504,10 +1522,13 @@ focus_tree = {
 					63 = { #Hinterpommern
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					807 = { #Gdynia
+					85 = { #Danzig
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					85 = { #Danzig
+					797 = { #Bdgosh
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+					798 = { #Gdynia
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 				}
@@ -5796,16 +5817,13 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_atlantic_coast_brittany_finnmark_tt
 				OR = {
-					925 = { #Finnmark
+					1023 = { #Finnmark
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					924 = { #Troms
+					878 = { #Troms
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					144 = { #Nordland
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					923 = { #Helgeland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					143 = { #Trondelag
@@ -5814,16 +5832,13 @@ focus_tree = {
 					142 = { #Vestlandet
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					922 = { #Agder
+					1017 = { #Agder
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					921 = { #Telemark
+					1020 = { #Telemark
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					110 = { #Oslo
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
-					915 = { #Halland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					140 = { #Västergötland
@@ -5832,7 +5847,7 @@ focus_tree = {
 					99 = { #Jylland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					912 = { #Sonderjylland
+					871 = { #Sonderjylland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					36 = { #Friesland
@@ -5851,6 +5866,9 @@ focus_tree = {
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					785 = { #Picardy
+						state_is_fully_controlled_by_ROOT_or_subject = yes
+					}
+					1016 = { #Picardy
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					15 = { #Normandy
@@ -6727,7 +6745,7 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				prioritize = { 807 }
+				prioritize = { 798 }
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = dockyard
@@ -7285,12 +7303,12 @@ focus_tree = {
 						state = 30
 						state = 23
 						state = 19
-						state = 806
-						state = 792
-						state = 790
+						state = 864
+						state = 796
 						state = 171
 						state = 180
 						state = 112
+						state = 869
 						state = 179
 						state = 169
 					}
@@ -7315,12 +7333,12 @@ focus_tree = {
 						state = 30
 						state = 23
 						state = 19
-						state = 806
-						state = 792
-						state = 790
+						state = 864
+						state = 796
 						state = 171
 						state = 180
 						state = 112
+						state = 869
 						state = 179
 						state = 169
 					}
@@ -7351,9 +7369,6 @@ focus_tree = {
 			custom_trigger_tooltip = {
 				tooltip = GER_controls_an_atantic_island_tt
 				OR = {
-					914 = { #Jan Mayen
-						state_is_fully_controlled_by_ROOT_or_subject = yes
-					}
 					100 = { #Iceland
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
@@ -7363,7 +7378,7 @@ focus_tree = {
 					337 = { #Faroes
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
-					933 = { #Shetlands
+					1021 = { #Shetlands
 						state_is_fully_controlled_by_ROOT_or_subject = yes
 					}
 					134 = { #Ireland
@@ -7409,11 +7424,10 @@ focus_tree = {
 					is_coastal = yes 
 					naval_base < 10
 					OR = { #Atlantic Islands from Greenland to Cape Verde
-						state = 914
 						state = 101
 						state = 100
 						state = 337
-						state = 933
+						state = 1021
 						state = 134
 						state = 119
 						state = 178
@@ -7443,7 +7457,7 @@ focus_tree = {
 						#state = 914 #Not you Jan Mayen
 						state = 100
 						state = 337
-						state = 933
+						state = 1021
 						state = 134
 						state = 119
 						state = 178
@@ -7455,7 +7469,6 @@ focus_tree = {
 						state = 704
 						state = 297
 						state = 705
-						state = 697
 						state = 720
 						state = 299
 					}
@@ -8083,7 +8096,9 @@ focus_tree = {
 		bypass = {
 			42 = { is_demilitarized_zone = no } #RHINELAND
 			51 = { is_demilitarized_zone = no } #MOSSELLAND
-			978 = { is_demilitarized_zone = no } #BADEN
+			801 = { is_demilitarized_zone = no } #BADEN
+			799 = { is_demilitarized_zone = no } #RHINELAND
+			800 = { is_demilitarized_zone = no } #BADEN
 		}
 
 		available = {
@@ -8091,7 +8106,9 @@ focus_tree = {
 			has_government = fascism
 			42 = { is_fully_controlled_by = ROOT } #RHINELAND
 			51 = { is_fully_controlled_by = ROOT } #MOSSELLAND
-			978 = { is_fully_controlled_by = ROOT } #BADEN
+			801 = { is_fully_controlled_by = ROOT } #BADEN
+			799 = { is_fully_controlled_by = ROOT } #MOSSELLAND
+			800 = { is_fully_controlled_by = ROOT } #BADEN
 		}
 		
 		ai_will_do = {
@@ -8104,7 +8121,9 @@ focus_tree = {
 
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
-			978 = { set_demilitarized_zone = no }
+			801 = { set_demilitarized_zone = no }
+			799 = { set_demilitarized_zone = no }
+			800 = { set_demilitarized_zone = no }
 			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -8427,7 +8446,7 @@ focus_tree = {
 
 				if = {
 					limit = {
-						controls_state = 16 #PARIS
+						controls_state = 855 #PARIS
 					}
 					GER_create_operative_coco_chanel = yes
 				}
@@ -8681,19 +8700,6 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					972 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 972
-			}
-			if = {
-				limit = {
 					74 = {
 						controller = {
 							NOT = {
@@ -8728,7 +8734,6 @@ focus_tree = {
 							is_owned_and_controlled_by = CZE
 							OR = {
 								state = 69
-								state = 972
 								state = 74
 							}
 						}
@@ -8795,9 +8800,10 @@ focus_tree = {
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
-					owns_state = 848
-					owns_state = 975
-					owns_state = 976
+					owns_state = 998
+					owns_state = 853
+					owns_state = 852
+					owns_state = 882
 				}
 			}
 		}
@@ -8885,9 +8891,10 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 998
+							owns_state = 853
+							owns_state = 852
+							owns_state = 882
 						}
 					}
 				}
@@ -8931,7 +8938,7 @@ focus_tree = {
 						create_wargoal = {
 							type = take_state_focus
 							target = AUS
-							generator = { 4 152 153 848 975 976 }
+							generator = { 4 152 153 998 853 852 882 }
 						}
 					}
 				}
@@ -8945,9 +8952,10 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
-							owns_state = 848
-							owns_state = 975
-							owns_state = 976
+							owns_state = 998
+							owns_state = 853
+							owns_state = 852
+							owns_state = 882
 						}
 						
 					}
@@ -9046,7 +9054,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_core = 848
+				add_state_core = 998
 			}
 			IF = {
 				limit = {
@@ -9061,7 +9069,7 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_core = 975
+				add_state_core = 853
 			}
 			IF = {
 				limit = {
@@ -9076,7 +9084,22 @@ focus_tree = {
 						}
 					}
 				}
-				add_state_core = 976
+				add_state_core = 852
+			}
+			IF = {
+				limit = {
+					976 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 882
 			}
 		}
 	}
@@ -9566,11 +9589,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					64 = {
+					810 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				64 = {
+				810 = {
 					custom_effect_tooltip = GER_create_four_militia_units_tt
 					hidden_effect = {
 						create_unit = {
@@ -9627,11 +9650,11 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					64 = {
+					810 = {
 						is_fully_controlled_by = ROOT
 					}
 				}
-				64 = {
+				810 = {
 					custom_effect_tooltip = GER_create_two_motorized_units_tt
 					hidden_effect = {
 						create_unit = {
@@ -9683,14 +9706,6 @@ focus_tree = {
 			OR = {
 				AND = {
 					69 = { #NORTH SUDETENLAND
-						controller = {
-							OR = {
-								has_war_with = GER
-								tag = ROOT
-							}
-						}
-					}
-					972 = { #EASTERN SUDETENLAND
 						controller = {
 							OR = {
 								has_war_with = GER
@@ -9774,19 +9789,6 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					972 = {
-						controller = {
-							NOT = {
-								tag = ROOT
-								is_subject_of = ROOT
-							}
-						}
-					}
-				}
-				add_state_claim = 972
-			}
-			if = {
-				limit = {
 					74 = {
 						controller = {
 							NOT = {
@@ -9805,7 +9807,6 @@ focus_tree = {
 					CZE = {
 						OR = {
 							controls_state = 69
-							controls_state = 972
 							controls_state = 74
 						}
 					}
@@ -9854,7 +9855,6 @@ focus_tree = {
 							NOT = { has_war_with = ENG }
 							OR = {
 								controls_state = 69
-								controls_state = 972
 								controls_state = 74
 							}
 						}
@@ -9934,7 +9934,6 @@ focus_tree = {
 						NOT = { tag = CZE }
 						OR = {
 							controls_state = 69
-							controls_state = 972
 							controls_state = 74
 						}
 						NOT = { has_war_with = ROOT }
@@ -9945,7 +9944,6 @@ focus_tree = {
 						NOT = { tag = CZE }
 						OR = {
 							controls_state = 69
-							controls_state = 972
 							controls_state = 74
 						}
 						NOT = { has_war_with = ROOT }
@@ -10013,10 +10011,7 @@ focus_tree = {
 					has_government = fascism
 				}
 			}
-			OR = {
-				owns_state = 69
-				owns_state = 972
-			}
+			owns_state = 69
 		}
 
 		ai_will_do = {
@@ -10093,6 +10088,8 @@ focus_tree = {
 					country_exists = CZE
 					9 = { is_controlled_by = ROOT }
 					75 = { is_controlled_by = ROOT }
+					880 = { is_controlled_by = ROOT }
+					881 = { is_controlled_by = ROOT }
 				}
 				any_allied_country = {
 					has_subject = CZE
@@ -10147,6 +10144,8 @@ focus_tree = {
 				}
 				add_state_claim = 9
 				add_state_claim = 75
+				add_state_claim = 881
+				add_state_claim = 880
 				if = { #Don't get claims or wargoal on Romania or its puppet if you agreed to split CZE with them
 					limit = {
 						NOT = {
@@ -10227,6 +10226,8 @@ focus_tree = {
 				}
 				add_state_claim = 9
 				add_state_claim = 75
+				add_state_claim = 881
+				add_state_claim = 880
 				create_wargoal = {
 					type = annex_everything
 					target = CZE
@@ -10553,7 +10554,7 @@ focus_tree = {
 				}
 				custom_effect_tooltip = GER_build_volkshalle_landmark_tt
 				hidden_effect = {
-					64 = {
+					810 = {
 						remove_building = {
 							type = landmark_berlin_reichstag
 							level = 1
@@ -10592,7 +10593,7 @@ focus_tree = {
 					is_owned_and_controlled_by = ROOT
 				}
 			}
-			has_full_control_of_state = 848
+			has_full_control_of_state = 153
 		}
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -10602,7 +10603,7 @@ focus_tree = {
 				province = 6680
 				value = 1
 			}
-			848 = {
+			153 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -10665,7 +10666,8 @@ focus_tree = {
 
 			188 = { add_claim_by = GER }
 			85 = { add_claim_by = GER }
-			807 = { add_claim_by = GER }
+			798 = { add_claim_by = GER }
+			797 = { add_claim_by = GER }
 			86 = { add_claim_by = GER }
 			762 = { add_claim_by = GER }
 
@@ -11025,9 +11027,8 @@ focus_tree = {
 			}
 
 			add_state_claim = 39
-			add_state_claim = 850
-			add_state_claim = 853
-			add_state_claim = 852
+			add_state_claim = 102
+			add_state_claim = 886
 			add_state_claim = 736
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -11516,7 +11517,7 @@ focus_tree = {
 				limit = {
 					NOT = { has_completed_focus = GER_integrate_czechoslovakia }
 				}
-				POL = { owns_state = 72 }
+				POL = { owns_state = 893 }
 			}
 		}
 
@@ -11654,8 +11655,10 @@ focus_tree = {
 				effect_tooltip = {
 					transfer_state = 85
 					add_state_core = 85
-					transfer_state = 807
-					add_state_core = 807
+					transfer_state = 797
+					add_state_core = 797
+					transfer_state = 798
+					add_state_core = 798
 					remove_state_claim = 86
 					remove_state_claim = 762
 				}
@@ -12256,7 +12259,7 @@ focus_tree = {
 		available = {
 			is_subject = no
 			144 = { state_is_fully_controlled_by_ROOT_or_subject = yes }
-			918 = { is_fully_controlled_by = SWE }
+			1034 = { is_fully_controlled_by = SWE }
 
 		}
 
@@ -12463,10 +12466,9 @@ focus_tree = {
 				}
 			}
 
-			add_state_claim = 845
+			add_state_claim = 911
 			add_state_claim = 3
-			add_state_claim = 151
-			add_state_claim = 847
+			add_state_claim = 912
 
 			if = {
 				limit = {
@@ -12478,11 +12480,11 @@ focus_tree = {
 					}
 				}
 				ITA = {
-					add_state_claim = 846
+					add_state_claim = 151
 				}
 			}
 			else = {
-				add_state_claim = 846
+				add_state_claim = 151
 			}
 
 			custom_effect_tooltip = generic_skip_one_line_tt
@@ -13243,22 +13245,22 @@ focus_tree = {
 				NOT = {
 					AND = {
 						OR = {
-							YUG = { owns_state = 102 }
-							102 = { owner = { is_subject_of = YUG } }
+							YUG = { owns_state = 887 }
+							887 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							YUG = { owns_state = 853 }
-							853 = { owner = { is_subject_of = YUG } }
+							YUG = { owns_state = 102 }
+							102 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
 				AND = {
-					102 = {
+					887 = {
 						owner = {
 							is_in_faction_with = ROOT
 						}
 					}
-					853 = {
+					102 = {
 						owner = {
 							is_in_faction_with = ROOT
 						}
@@ -13278,6 +13280,8 @@ focus_tree = {
 			is_subject = no
 			controls_state = 4
 			controls_state = 152
+			controls_state = 882
+			controls_state = 998
 			has_army_manpower = { size > 749999 } #ca 80 div
 		}
 
@@ -13362,19 +13366,19 @@ focus_tree = {
 
 				IF = {
 					limit = {
-						102 = {
+						887 = {
 							owner = {
-								owns_state = 853
+								owns_state = 102
 							}
 						}
 					}
-					102 = {
+					887 = {
 						owner = {
 							ROOT = {
 								create_wargoal = {
 									type = take_claimed_state
 									target = PREV
-									generator = { 102 853}
+									generator = { 102 887}
 								}
 							}
 						}
@@ -13382,6 +13386,30 @@ focus_tree = {
 				}
 
 				ELSE = {
+					IF = {
+						limit = {
+							887 = {
+								owner = {
+									NOT = {
+										is_in_faction_with = ROOT
+									}
+								}
+							}
+						}
+	
+						887 = {
+							owner = {
+								ROOT = {
+									create_wargoal = {
+										type = take_claimed_state
+										target = PREV
+										generator = { 887 }
+									}
+								}
+							}
+						}
+					}
+					
 					IF = {
 						limit = {
 							102 = {
@@ -13400,30 +13428,6 @@ focus_tree = {
 										type = take_claimed_state
 										target = PREV
 										generator = { 102 }
-									}
-								}
-							}
-						}
-					}
-					
-					IF = {
-						limit = {
-							853 = {
-								owner = {
-									NOT = {
-										is_in_faction_with = ROOT
-									}
-								}
-							}
-						}
-	
-						853 = {
-							owner = {
-								ROOT = {
-									create_wargoal = {
-										type = take_claimed_state
-										target = PREV
-										generator = { 853 }
 									}
 								}
 							}
@@ -13482,10 +13486,10 @@ focus_tree = {
 					country_exists = YUG
 					NOT = { has_war_with = YUG }
 					OR = {
+						owns_state = 887
+						887 = { owner = { is_subject_of = YUG } }
 						owns_state = 102
 						102 = { owner = { is_subject_of = YUG } }
-						owns_state = 853
-						853 = { owner = { is_subject_of = YUG } }
 					}
 				}
 				custom_trigger_tooltip = {
@@ -13493,12 +13497,12 @@ focus_tree = {
 					AND = {
 						NOT = { country_exists = YUG }
 						OR = {
-							owns_state = 102
-							102 = { owner = { is_subject_of = YUG } }
+							owns_state = 887
+							887 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 853
-							853 = { owner = { is_subject_of = YUG } }
+							owns_state = 102
+							102 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
 							owns_state = 45
@@ -13509,28 +13513,32 @@ focus_tree = {
 							106 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #New Southern Serbia state
-							owns_state = 803
-							803 = { owner = { is_subject_of = YUG } }
+							owns_state = 851
+							851 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Herzegovina
-							owns_state = 804
+							owns_state = 913
 							804 = { owner = { is_subject_of = YUG } }
 						}
 						OR = { #Kosovo
-							owns_state = 802
-							802 = { owner = { is_subject_of = YUG } }
+							owns_state = 850
+							850 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
 							owns_state = 103
 							103 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
+							owns_state = 999
+							999 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
 							owns_state = 105
 							105 = { owner = { is_subject_of = YUG } }
 						}
 						OR = {
-							owns_state = 970
-							970 = { owner = { is_subject_of = YUG } }
+							owns_state = 849
+							849 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
@@ -13616,8 +13624,8 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
-								803 = { is_owned_by = YUG }
-								803 = { is_owned_by = GER }
+								851 = { is_owned_by = YUG }
+								851 = { is_owned_by = GER }
 							}
 						}
 						BUL = { 
@@ -13633,8 +13641,8 @@ focus_tree = {
 							OR = {
 								106 = { is_owned_by = YUG }
 								106 = { is_owned_by = GER }
-								803 = { is_owned_by = YUG }
-								803 = { is_owned_by = GER }
+								851 = { is_owned_by = YUG }
+								851 = { is_owned_by = GER }
 							}
 						}
 						BUL = {
@@ -13648,10 +13656,10 @@ focus_tree = {
 							}
 							if = {
 								limit = {
-									803 = { is_owned_by = YUG }
-									803 = { is_owned_by = GER }
+									851 = { is_owned_by = YUG }
+									851 = { is_owned_by = GER }
 								}
-								transfer_state = 803
+								transfer_state = 851
 							}
 						}
 					}
@@ -13687,6 +13695,8 @@ focus_tree = {
 						if = {
 							limit = { has_completed_focus = ITA_balkan_ambition }
 							transfer_state = 103
+							transfer_state = 999
+							transfer_state = 1022
 						}
 						if = {
 							limit = { owns_state = 44 }
@@ -13694,15 +13704,11 @@ focus_tree = {
 						}
 						if = {
 							limit = { owns_state = 44 }
-							transfer_state = 802
+							transfer_state = 850
 						}
 						if = {
 							limit = { owns_state = 44 }
-							transfer_state = 934
-						}
-						if = {
-							limit = { owns_state = 44 }
-							transfer_state = 970
+							transfer_state = 849
 						}
 					}
 				}
@@ -15520,9 +15526,7 @@ focus_tree = {
 				controls_state = 541
 				controls_state = 546
 				controls_state = 777
-				controls_state = 893
-				controls_state = 894
-				controls_state = 894
+				controls_state = 1105
 			}
 		}
 
@@ -15831,13 +15835,13 @@ focus_tree = {
 
 			IF = { #If Germany doesn't control Karas
 				limit = {
-					893 = {
+					1105 = {
 						NOT = { is_fully_controlled_by = ROOT }
 					}
 				}
 				IF = { #Karas
 					limit = {
-						893 = {
+						1105 = {
 							controller = {
 								is_subject = yes
 								OVERLORD = {
@@ -15851,7 +15855,7 @@ focus_tree = {
 						}
 					}
 	
-					893 = {
+					1105 = {
 						controller = {
 							OVERLORD = {
 								country_event = {
@@ -15865,13 +15869,13 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						893 = {
+						1105 = {
 							controller = {
 								is_in_faction_with = ROOT
 							}
 						}
 					}
-					893 = {
+					1105 = {
 						controller = {
 							country_event = {
 								id = wuw_GER_diplomacy.38
@@ -15883,13 +15887,13 @@ focus_tree = {
 				}
 				ELSE_IF = {
 					limit = {
-						893 = {
+						1105 = {
 							controller = {
 								is_subject_of = ROOT
 							}
 						}
 					}
-					893 = {
+					1105 = {
 						controller = {
 							country_event = {
 								id = wuw_GER_diplomacy.38
@@ -15901,7 +15905,7 @@ focus_tree = {
 				ELSE_IF = {
 					limit = {
 						
-						893 = {
+						1105 = {
 							controller = {
 								OR = {
 									AND = {
@@ -15922,201 +15926,7 @@ focus_tree = {
 					#this is just to prevent multiple events from being sent, and claims being sent erraneously
 				}
 				ELSE = {
-					add_state_claim = 893
-				}
-			}
-
-			IF = { #If Germany doesn't control Kunene
-				limit = {
-					894 = {
-						NOT = { is_fully_controlled_by = ROOT}
-					}
-				}
-				IF = { #KUNENE
-					limit = {
-						894 = {
-							controller = {
-								is_subject = yes
-								OVERLORD = {
-									is_in_faction_with = ROOT
-									NOT = {
-										has_country_flag = GER_african_colonial_demand_sent_flag
-										original_tag = GER
-									}
-								}
-							}
-						}
-					}
-	
-					894 = {
-						controller = {
-							OVERLORD = {
-								country_event = {
-									id = wuw_GER_diplomacy.38
-									hours = 6
-								}
-								set_country_flag = GER_african_colonial_demand_sent_flag
-							}
-						}
-					}	
-				}
-				ELSE_IF = {
-					limit = {
-						894 = {
-							controller = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-					894 = {
-						controller = {
-							country_event = {
-								id = wuw_GER_diplomacy.38
-								hours = 6
-							}
-							set_country_flag = GER_african_colonial_demand_sent_flag
-						}
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						894 = {
-							controller = {
-								is_subject_of = ROOT
-							}
-						}
-					}
-					894 = {
-						controller = {
-							country_event = {
-								id = wuw_GER_diplomacy.38
-								hours = 6
-							}
-						}
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						
-						894 = {
-							controller = {
-								OR = {
-									AND = {
-										is_subject = no
-										has_country_flag = GER_african_colonial_demand_sent_flag
-									}
-									AND = {
-										is_subject = yes
-										OVERLORD = {
-											has_country_flag = GER_african_colonial_demand_sent_flag
-										}
-									}
-								}
-							}
-						}
-					
-					}
-					#this is just to prevent multiple events from being sent, and claims being sent erraneously
-				}
-				ELSE = {
-					add_state_claim = 894
-				}
-			}
-
-			IF = { #If Germany doesn't control Otjozondjupa
-				limit = {
-					895 = {
-						NOT = { is_fully_controlled_by = ROOT}
-					}
-				}
-				IF = { #OTJOZONDJUPA
-					limit = {
-						895 = {
-							controller = {
-								is_subject = yes
-								OVERLORD = {
-									is_in_faction_with = ROOT
-									NOT = {
-										has_country_flag = GER_african_colonial_demand_sent_flag
-										original_tag = GER
-									}
-								}
-							}
-						}
-					}
-	
-					895 = {
-						controller = {
-							OVERLORD = {
-								country_event = {
-									id = wuw_GER_diplomacy.38
-									hours = 6
-								}
-								set_country_flag = GER_african_colonial_demand_sent_flag
-							}
-						}
-					}	
-				}
-				ELSE_IF = {
-					limit = {
-						895 = {
-							controller = {
-								is_in_faction_with = ROOT
-							}
-						}
-					}
-					895 = {
-						controller = {
-							country_event = {
-								id = wuw_GER_diplomacy.38
-								hours = 6
-							}
-							set_country_flag = GER_african_colonial_demand_sent_flag
-						}
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						895 = {
-							controller = {
-								is_subject_of = ROOT
-							}
-						}
-					}
-					895 = {
-						controller = {
-							country_event = {
-								id = wuw_GER_diplomacy.38
-								hours = 6
-							}
-						}
-					}
-				}
-				ELSE_IF = {
-					limit = {
-						
-						895 = {
-							controller = {
-								OR = {
-									AND = {
-										is_subject = no
-										has_country_flag = GER_african_colonial_demand_sent_flag
-									}
-									AND = {
-										is_subject = yes
-										OVERLORD = {
-											has_country_flag = GER_african_colonial_demand_sent_flag
-										}
-									}
-								}
-							}
-						}
-						
-					}
-					#this is just to prevent multiple events from being sent, and claims being sent erraneously
-				}
-				ELSE = {
-					add_state_claim = 895
+					add_state_claim = 1105
 				}
 			}
 
@@ -16612,7 +16422,7 @@ focus_tree = {
 				IF = {
 					limit = {
 						OR = {
-							336 = {
+							862 = {
 								is_fully_controlled_by = CHI
 								controller = {
 									NOT = {
@@ -16634,7 +16444,7 @@ focus_tree = {
 							}
 						}
 					}
-					336 = { #Singapore
+					862 = { #Singapore
 						controller = {
 							country_event = {
 								id = wuw_GER_diplomacy.35
@@ -16646,8 +16456,8 @@ focus_tree = {
 				}
 
 				ELSE_IF = {
-					limit = { 336 = { NOT = { is_fully_controlled_by = ROOT}}}
-					add_state_claim = 336
+					limit = { 862 = { NOT = { is_fully_controlled_by = ROOT}}}
+					add_state_claim = 862
 				}
 
 				IF = {
@@ -17064,7 +16874,7 @@ focus_tree = {
 				IF = {
 					limit = {
 						OR = {
-							979 = {
+							1004 = {
 								is_fully_controlled_by = CHI
 								controller = {
 									NOT = {
@@ -17086,7 +16896,7 @@ focus_tree = {
 							}
 						}
 					}
-					979 = { #Kaiser-Wilhelmsland
+					1004 = { #Kaiser-Wilhelmsland
 						controller = {
 							country_event = {
 								id = wuw_GER_diplomacy.35
@@ -17098,8 +16908,8 @@ focus_tree = {
 				}
 
 				ELSE_IF = {
-					limit = { 979 = { NOT = { is_fully_controlled_by = ROOT}}}
-					add_state_claim = 979
+					limit = { 1004 = { NOT = { is_fully_controlled_by = ROOT}}}
+					add_state_claim = 1004
 				}
 
 				IF = {
@@ -17404,7 +17214,7 @@ focus_tree = {
 				335 = {
 					is_fully_controlled_by = ROOT
 				}
-				336 = {
+				862 = {
 					is_fully_controlled_by = ROOT
 				}
 				743 = {
@@ -17427,8 +17237,8 @@ focus_tree = {
 			custom_effect_tooltip = generic_skip_one_line_tt
 			
 			IF = { #singapore
-				limit = { 336 = { is_fully_controlled_by = ROOT} }
-				336 = {
+				limit = { 862 = { is_fully_controlled_by = ROOT} }
+				862 = {
 					add_dynamic_modifier = {
 						modifier = GER_sentinels_of_the_pacific_modifier
 						days = 180
@@ -17486,7 +17296,7 @@ focus_tree = {
 
 			IF = { #if none of the states are controlled by Germany, show tooltip
 				limit = {
-					336 = {
+					862 = {
 						NOT = {
 							is_fully_controlled_by = ROOT
 						}
@@ -17618,7 +17428,7 @@ focus_tree = {
 			add_state_claim = 333 #North Borneo
 			add_state_claim = 334 #Kalimantan
 			add_state_claim = 335 #Java
-			add_state_claim = 336 #Singapore
+			add_state_claim = 862 #Singapore
 			add_state_claim = 667 #Lesser Sunda Islands
 			add_state_claim = 668 #Moluccas
 			add_state_claim = 672 # Sumatra

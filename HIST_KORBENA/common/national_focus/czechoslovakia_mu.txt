@@ -3291,8 +3291,7 @@ focus_tree = {
 					declare_war_on = {
 						target = LIT
 						type = annex_everything
-					}
-					activate_decision = form_commonwealth	#help Poland form this more easily, meaning getting them as an ally becomes easier
+					}	#help Poland form this more easily, meaning getting them as an ally becomes easier
 				}
 				add_to_war = {
 					targeted_alliance = POL
