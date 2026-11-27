@@ -3,6 +3,7 @@ state = {
 	id = 395
 	name ="STATE_395"
 	manpower = 3830651
+	buildings_max_level_factor = 1.000
 	state_category = large_metropolis
 
 	resources = {

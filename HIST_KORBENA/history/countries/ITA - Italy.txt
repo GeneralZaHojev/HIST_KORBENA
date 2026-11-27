@@ -2,6 +2,7 @@
 
 ETH_set_up_lon_arms_resolution_effect = yes 
 
+create_intelligence_agency = yes
 if = {
 	limit = {
 		NOT = {

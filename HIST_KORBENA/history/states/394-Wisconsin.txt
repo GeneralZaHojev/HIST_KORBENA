@@ -32,5 +32,6 @@ state = {
 		10526
 	}
 	manpower =1539004
+	buildings_max_level_factor =1.000
 	state_category =large_city
 }

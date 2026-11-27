@@ -35,6 +35,4 @@ state = {
 		11768
 		13923
 	}
-	
-	buildings_max_level_factor=1.000
 }

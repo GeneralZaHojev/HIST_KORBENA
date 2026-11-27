@@ -1,19 +1,9 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			
 			random_country = {
-				limit = {
-					is_ai = no
-				}
-				random_other_country = {
-					limit = {
-						is_ai = no
-					}
-					set_global_flag = tp_is_multiplayer
-				}
-			}
-			set_global_flag = tp_is_multiplayer #DEBUG
-			random_country = {
+				set_global_flag = tp_is_multiplayer #DEBUG
 				set_global_flag = tpt_cw_fascist
 				set_variable = {
 					var = global.mst_variable_C1

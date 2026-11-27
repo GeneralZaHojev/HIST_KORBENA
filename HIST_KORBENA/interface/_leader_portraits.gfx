@@ -1173,6 +1173,12 @@ spriteTypes = {
 		texturefile = "gfx/leaders/CHI/portrait_prc_mao_zedong.dds"
 	}
 
+	# Old Mao 
+	spriteType = {
+		name = "GFX_Portrait_China_Mao_Zedong"
+		texturefile = "gfx/leaders/CHI/Portrait_China_Mao_Zedong.dds"
+	}
+
 	spriteType = {
 		name = "GFX_idea_CHI_mao_zedong"
 		texturefile = "gfx/interface/ideas/idea_CHI_mao_zedong.dds"
@@ -3214,6 +3220,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
 	}
 
+	spriteType = {	#PfoT only - should never show up
+		name = GFX_portrait_AUS_alfred_klahr_small
+		texturefile = "gfx/interface/ideas/idea_europe_generic_land_2.dds"
+	}
+
 	spriteType = {
 		name = GFX_portrait_BEL_hubert_pierlot
 		texturefile = "gfx/leaders/BEL/Portrait_Belgium_Hubert_Pierlot.dds"
@@ -5018,7 +5029,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_INS_sukarno
+		name = GFX_portrait_INS_sukarno_generic
 		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_5.dds"
 	}
 
@@ -5033,7 +5044,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_INS_sutan_sjahrir
+		name = GFX_portrait_INS_sutan_sjahrir_generic
 		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
 	}
 
@@ -6043,7 +6054,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_Reza_Shah_Pahlavi
+		name = GFX_portrait_PER_reza_shah_pahlavi
 		texturefile = "gfx/leaders/PER/Portrait_Iran_Reza_Shah_Pahlavi.dds"
 	}
 
@@ -6388,7 +6399,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = GFX_portrait_Phraya_Phahon
+		name = GFX_portrait_Phraya_Phahon_old
 		texturefile = "gfx/leaders/SIA/Portrait_Siam_Phraya_Phahon.dds"
 	}
 
@@ -6430,6 +6441,26 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_SIK_chiang_yufen_small
 		texturefile = "gfx/interface/ideas/idea_asia_generic_land_3.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_XSM_han_youwen
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_XSM_han_youwen_small
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_2.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_XSM_han_yimu
+		texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_XSM_han_yimu_small
+		texturefile = "gfx/interface/ideas/idea_asia_generic_land_1.dds"
 	}
 
 	spriteType = {
@@ -7449,6 +7480,11 @@ spriteTypes = {
 	spriteType = {
 		name = GFX_portrait_YUG_prince_paul
 		texturefile = "gfx/leaders/YUG/Portrait_Yugoslavia_Prince_Paul.dds"
+	}
+
+	spriteType = {
+		name = GFX_portrait_YUG_dusan_simovic
+		texturefile = "gfx/leaders/YUG/Portrait_Yugoslavia_Dusan_Simovic.dds"
 	}
 
 	spriteType = {
@@ -8839,13 +8875,13 @@ spriteTypes = {
 	}
 
 
- ######  ########    ###    
-##    ## ##         ## ##   
-##       ##        ##   ##  
- ######  ######   ##     ## 
-      ## ##       ######### 
-##    ## ##       ##     ## 
- ######  ######## ##     ## 
+##    ##  ######  ##    ##  ######  
+###   ## ##    ## ###   ## ##    ## 
+####  ## ##       ####  ## ##       
+## ## ## ##       ## ## ##  ######  
+##  #### ##       ##  ####       ## 
+##   ### ##    ## ##   ### ##    ## 
+##    ##  ######  ##    ##  ######  
 
 	## JAP ##
 	spriteType = {
@@ -9051,6 +9087,92 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_portrait_RNG_sun_dianying"
 		texturefile = "gfx/leaders/MISC/portrait_RNG_sun_dianying.dds"
+	}
+
+
+
+
+ #######    #    #######  #####  
+    #      # #   #     # #     # 
+    #     #   #  #     # #       
+    #    #     # #     # #  #### 
+    #    ####### #     # #     # 
+    #    #     # #     # #     # 
+    #    #     # #######  #####  
+
+                                 
+	## INS ##
+
+	spriteType = {
+		name = "GFX_portrait_INS_amir_sjarifuddin"
+		texturefile = "gfx/leaders/INS/portrait_INS_amir_sjarifuddin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ins_at_van_starkenborgh"
+		texturefile = "gfx/leaders/INS/portrait_ins_at_van_starkenborgh.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_iskandar_sjah"
+		texturefile = "gfx/leaders/INS/portrait_INS_iskandar_sjah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_mohammad_hatta"
+		texturefile = "gfx/leaders/INS/portrait_INS_mohammad_hatta.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_sukarno"
+		texturefile = "gfx/leaders/INS/portrait_INS_sukarno.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_tan_malaka"
+		texturefile = "gfx/leaders/INS/portrait_INS_tan_malaka.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_AST_john_collins"
+		texturefile = "gfx/leaders/AST/portrait_AST_john_collins.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_bonifacius_jonge"
+		texturefile = "gfx/leaders/INS/portrait_INS_bonifacius_jonge.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_kartosoewirjo"
+		texturefile = "gfx/leaders/INS/portrait_INS_kartosoewirjo.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_dewa_geg"
+		texturefile = "gfx/leaders/INS/portrait_INS_dewa_geg.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_alauddin_syah"
+		texturefile = "gfx/leaders/INS/portrait_INS_alauddin_syah.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_syarif_muhammad_alkadrie"
+		texturefile = "gfx/leaders/INS/portrait_INS_syarif_muhammad_alkadrie.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_sultan_muhibuddin"
+		texturefile = "gfx/leaders/INS/portrait_INS_sultan_muhibuddin.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_syarif_kasim"
+		texturefile = "gfx/leaders/INS/portrait_INS_syarif_kasim.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_starkenborgh_stachouwer"
+		texturefile = "gfx/leaders/INS/portrait_INS_starkenborgh_stachouwer.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_INS_sutan_sjahrir"
+		texturefile = "gfx/leaders/INS/portrait_INS_sutan_sjahrir.dds"
+	}
+
+
+	## SIA ##
+	spriteType = {
+		name = "GFX_portrait_SIA_phraya_phahon"
+		texturefile = "gfx/leaders/SIA/portrait_SIA_phraya_phahon.dds"
 	}
 
 	## HKS ##

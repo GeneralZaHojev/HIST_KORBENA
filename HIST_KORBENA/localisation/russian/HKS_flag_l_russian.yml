@@ -1,0 +1,13 @@
+﻿l_russian:
+ GER_anschluss_complete: "С Аншлюса прошло"
+ GER_anschluss_complete_tt: "более чем [?GER_anschluss_complete:days|Y0]"
+ GER_sudet_complete: "С анексии Судет прошло"
+ GER_sudet_complete_tt: "более чем [?GER_sudet_complete:days|Y0]"
+ GER_fate_of_czechoslovakia_complete: "С анексии Чехословакии прошло"
+ GER_fate_of_czechoslovakia_complete_tt: "более чем [?GER_fate_of_czechoslovakia_complete:days|Y0]"
+ GER_2WW_complete: "С нападения на Польшу прошло"
+ GER_2WW_complete_tt: "более чем [?GER_2WW_complete:days|Y0]"
+ GER_ascended_advisor_4_name_text: "§Y[GetAscendedAdvisorName4]§!"
+ GER_ascended_advisor_5_name_text: "§Y[GetAscendedAdvisorName5]§!"
+ GER_the_inner_circle_tt_ascended_advisor_4: "§Y[GetAscendedAdvisorName4]§! as [GetAscendedAdvisorDesc4] \n"
+ GER_the_inner_circle_tt_ascended_advisor_5: "§Y[GetAscendedAdvisorName5]§! as [GetAscendedAdvisorDesc5] \n"

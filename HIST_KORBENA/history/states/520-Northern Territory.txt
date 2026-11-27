@@ -26,8 +26,6 @@ state = {
 		add_core_of = AST
 	}
 
-	buildings_max_level_factor=1.000
-
 	provinces = {
 		1217
 		1410

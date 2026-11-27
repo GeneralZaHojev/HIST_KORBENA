@@ -24,5 +24,4 @@ state = {
 		6700
 		11625
 	}
-	local_supplies = 12.0 
 }

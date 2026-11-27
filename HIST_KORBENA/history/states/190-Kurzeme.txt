@@ -32,6 +32,4 @@ state = {
 		9262
 		11246
 	}
-	buildings_max_level_factor=1.000
-	local_supplies=5.0 
 }

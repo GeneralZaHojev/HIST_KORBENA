@@ -1,5 +1,7 @@
 ﻿capital = 855 # Paris/Ile de France
 
+create_intelligence_agency = yes
+
 if = {
 	limit = {
 		NOT = {

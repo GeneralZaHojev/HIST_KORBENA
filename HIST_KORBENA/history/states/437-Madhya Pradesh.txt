@@ -5,7 +5,9 @@ state = {
 	manpower = 8402500
 
 	state_category = rural
-	buildings_max_level_factor=1.000
+
+	resources = {
+	}
 
 	history = {
 		owner = RAJ

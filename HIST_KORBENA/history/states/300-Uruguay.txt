@@ -16,6 +16,9 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {
+			10362 5
+		}
 		add_core_of = KOA
 
 	}

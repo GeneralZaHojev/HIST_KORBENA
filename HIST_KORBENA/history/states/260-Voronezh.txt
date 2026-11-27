@@ -44,5 +44,4 @@ state = {
 		11475
 		11540
 	}
-	local_supplies=9.0 
 }

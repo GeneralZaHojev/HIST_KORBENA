@@ -109,6 +109,10 @@ on_actions = {
 				}
 				ASG_stats_update = yes
 				#military
+				ASG_calculate_initial_graph_point_military = yes
+				#civilian
+				ASG_calculate_initial_graph_point_fleet = yes
+				#civilian
 			}
 		}
 	}

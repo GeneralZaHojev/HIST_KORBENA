@@ -345,6 +345,734 @@ ASG_clear_military_graph = {
 		categorie = "military"
 	}
 }
+
+ASG_calculate_initial_graph_point_military = {
+	meta_effect = {
+		text = {
+			set_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = [tag1].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = [tag2].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = [tag3].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = [tag4].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = [tag5].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = [tag6].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = [tag7].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = [tag8].ASG_[categorie]_score_array^0
+			}
+
+
+			set_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = [tag9].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = [tag10].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = [tag11].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = [tag12].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = [tag13].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = [tag14].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = [tag15].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = [tag16].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = [tag17].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = [tag18].ASG_[categorie]_score_array^0
+			}
+
+			multiply_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+
+			multiply_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+
+			divide_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+
+			add_to_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+
+			round_temp_variable = ASG_[categorie]_ITA_pixel_value
+			round_temp_variable = ASG_[categorie]_USA_pixel_value
+			round_temp_variable = ASG_[categorie]_GER_pixel_value
+			round_temp_variable = ASG_[categorie]_SOV_pixel_value
+			round_temp_variable = ASG_[categorie]_ENG_pixel_value
+			round_temp_variable = ASG_[categorie]_FRA_pixel_value
+			round_temp_variable = ASG_[categorie]_ROM_pixel_value
+			round_temp_variable = ASG_[categorie]_JAP_pixel_value
+			round_temp_variable = ASG_[categorie]_AST_pixel_value
+			round_temp_variable = ASG_[categorie]_BUL_pixel_value
+			round_temp_variable = ASG_[categorie]_CAN_pixel_value
+			round_temp_variable = ASG_[categorie]_FIN_pixel_value
+			round_temp_variable = ASG_[categorie]_HUN_pixel_value
+			round_temp_variable = ASG_[categorie]_RAJ_pixel_value
+			round_temp_variable = ASG_[categorie]_SAF_pixel_value
+			round_temp_variable = ASG_[categorie]_SIA_pixel_value
+			round_temp_variable = ASG_[categorie]_AXI_pixel_value
+			round_temp_variable = ASG_[categorie]_ALI_pixel_value
+
+			clamp_variable = {
+				var = ASG_[categorie]_ITA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_USA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_GER_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SOV_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ENG_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_FRA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ROM_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_JAP_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_AST_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_BUL_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_CAN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_FIN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_HUN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_RAJ_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SAF_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SIA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_AXI_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ALI_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ITA = ASG_[categorie]_ITA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_USA = ASG_[categorie]_USA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_GER = ASG_[categorie]_GER_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SOV = ASG_[categorie]_SOV_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ENG = ASG_[categorie]_ENG_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_FRA = ASG_[categorie]_FRA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ROM = ASG_[categorie]_ROM_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_JAP = ASG_[categorie]_JAP_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_AST = ASG_[categorie]_AST_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_BUL = ASG_[categorie]_BUL_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_CAN = ASG_[categorie]_CAN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_FIN = ASG_[categorie]_FIN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_HUN = ASG_[categorie]_HUN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_RAJ = ASG_[categorie]_RAJ_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SAF = ASG_[categorie]_SAF_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SIA = ASG_[categorie]_SIA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_AXI = ASG_[categorie]_AXI_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ALI = ASG_[categorie]_ALI_pixel_value
+			}
+			# log = "ASG : INITIAL [categorie] GRAPH UPDATE : [GetDateText]"
+			# log = "ASG : END OF [categorie] GRAPH INITIAL UPDATE"
+		}
+		categorie = "military"
+		tag1 = "[?GLOBAL.ASG_ITA_curve_tag.GetTag]"
+		tag2 = "[?GLOBAL.ASG_USA_curve_tag.GetTag]"
+		tag3 = "[?GLOBAL.ASG_GER_curve_tag.GetTag]"
+		tag4 = "[?GLOBAL.ASG_SOV_curve_tag.GetTag]"
+		tag5 = "[?GLOBAL.ASG_ENG_curve_tag.GetTag]"
+		tag6 = "[?GLOBAL.ASG_FRA_curve_tag.GetTag]"
+		tag7 = "[?GLOBAL.ASG_ROM_curve_tag.GetTag]"
+		tag8 = "[?GLOBAL.ASG_JAP_curve_tag.GetTag]"
+
+		tag9 = "[?GLOBAL.ASG_AST_curve_tag.GetTag]"
+		tag10 = "[?GLOBAL.ASG_BUL_curve_tag.GetTag]"
+		tag11 = "[?GLOBAL.ASG_CAN_curve_tag.GetTag]"
+		tag12 = "[?GLOBAL.ASG_FIN_curve_tag.GetTag]"
+		tag13 = "[?GLOBAL.ASG_HUN_curve_tag.GetTag]"
+		tag14 = "[?GLOBAL.ASG_RAJ_curve_tag.GetTag]"
+		tag15 = "[?GLOBAL.ASG_SAF_curve_tag.GetTag]"
+		tag16 = "[?GLOBAL.ASG_SIA_curve_tag.GetTag]"
+		tag17 = "[?GLOBAL.ASG_AXI_curve_tag.GetTag]"
+		tag18 = "[?GLOBAL.ASG_ALI_curve_tag.GetTag]"
+		# debug = yes
+	}
+}
+
+
+ASG_calculate_initial_graph_point_fleet = {
+	meta_effect = {
+		text = {
+			set_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = [tag1].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = [tag2].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = [tag3].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = [tag4].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = [tag5].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = [tag6].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = [tag7].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = [tag8].ASG_[categorie]_score_array^0
+			}
+
+
+			set_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = [tag9].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = [tag10].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = [tag11].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = [tag12].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = [tag13].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = [tag14].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = [tag15].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = [tag16].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = [tag17].ASG_[categorie]_score_array^0
+			}
+			set_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = [tag18].ASG_[categorie]_score_array^0
+			}
+
+			multiply_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+
+			multiply_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+			multiply_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = GLOBAL.ASG_[categorie]_amount_to_pixel_scale_factor
+			}
+
+			divide_temp_variable = {
+				ASG_[categorie]_ITA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_USA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_GER_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_SOV_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_ENG_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_FRA_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_ROM_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+			divide_temp_variable = {
+				ASG_[categorie]_JAP_pixel_value = GLOBAL.ASG_[categorie]_rendering_scale_factor
+			}
+
+			add_to_temp_variable = {
+				ASG_[categorie]_AST_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_BUL_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_CAN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_FIN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_HUN_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_RAJ_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_SAF_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_SIA_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_AXI_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+			add_to_temp_variable = {
+				ASG_[categorie]_ALI_pixel_value = GLOBAL.ASG_graph_pixel_y_offset_value
+			}
+
+			round_temp_variable = ASG_[categorie]_ITA_pixel_value
+			round_temp_variable = ASG_[categorie]_USA_pixel_value
+			round_temp_variable = ASG_[categorie]_GER_pixel_value
+			round_temp_variable = ASG_[categorie]_SOV_pixel_value
+			round_temp_variable = ASG_[categorie]_ENG_pixel_value
+			round_temp_variable = ASG_[categorie]_FRA_pixel_value
+			round_temp_variable = ASG_[categorie]_ROM_pixel_value
+			round_temp_variable = ASG_[categorie]_JAP_pixel_value
+			round_temp_variable = ASG_[categorie]_AST_pixel_value
+			round_temp_variable = ASG_[categorie]_BUL_pixel_value
+			round_temp_variable = ASG_[categorie]_CAN_pixel_value
+			round_temp_variable = ASG_[categorie]_FIN_pixel_value
+			round_temp_variable = ASG_[categorie]_HUN_pixel_value
+			round_temp_variable = ASG_[categorie]_RAJ_pixel_value
+			round_temp_variable = ASG_[categorie]_SAF_pixel_value
+			round_temp_variable = ASG_[categorie]_SIA_pixel_value
+			round_temp_variable = ASG_[categorie]_AXI_pixel_value
+			round_temp_variable = ASG_[categorie]_ALI_pixel_value
+
+			clamp_variable = {
+				var = ASG_[categorie]_ITA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_USA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_GER_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SOV_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ENG_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_FRA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ROM_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_JAP_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_AST_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_BUL_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_CAN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_FIN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_HUN_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_RAJ_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SAF_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_SIA_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_AXI_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			clamp_variable = {
+				var = ASG_[categorie]_ALI_pixel_value
+				min = GLOBAL.ASG_graph_pixel_y_minimum_value_corrected_by_offset
+				max = GLOBAL.ASG_graph_pixel_y_maximum_value_corrected_by_offset
+			}
+			
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ITA = ASG_[categorie]_ITA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_USA = ASG_[categorie]_USA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_GER = ASG_[categorie]_GER_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SOV = ASG_[categorie]_SOV_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ENG = ASG_[categorie]_ENG_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_FRA = ASG_[categorie]_FRA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ROM = ASG_[categorie]_ROM_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_JAP = ASG_[categorie]_JAP_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_AST = ASG_[categorie]_AST_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_BUL = ASG_[categorie]_BUL_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_CAN = ASG_[categorie]_CAN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_FIN = ASG_[categorie]_FIN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_HUN = ASG_[categorie]_HUN_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_RAJ = ASG_[categorie]_RAJ_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SAF = ASG_[categorie]_SAF_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_SIA = ASG_[categorie]_SIA_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_AXI = ASG_[categorie]_AXI_pixel_value
+			}
+			set_variable = {
+				GLOBAL.ASG_[categorie]_y_position_ALI = ASG_[categorie]_ALI_pixel_value
+			}
+			# log = "ASG : INITIAL [categorie] GRAPH UPDATE : [GetDateText]"
+			# log = "ASG : END OF [categorie] GRAPH INITIAL UPDATE"
+		}
+		categorie = "fleet"
+		tag1 = "[?GLOBAL.ASG_ITA_curve_tag.GetTag]"
+		tag2 = "[?GLOBAL.ASG_USA_curve_tag.GetTag]"
+		tag3 = "[?GLOBAL.ASG_GER_curve_tag.GetTag]"
+		tag4 = "[?GLOBAL.ASG_SOV_curve_tag.GetTag]"
+		tag5 = "[?GLOBAL.ASG_ENG_curve_tag.GetTag]"
+		tag6 = "[?GLOBAL.ASG_FRA_curve_tag.GetTag]"
+		tag7 = "[?GLOBAL.ASG_ROM_curve_tag.GetTag]"
+		tag8 = "[?GLOBAL.ASG_JAP_curve_tag.GetTag]"
+
+		tag9 = "[?GLOBAL.ASG_AST_curve_tag.GetTag]"
+		tag10 = "[?GLOBAL.ASG_BUL_curve_tag.GetTag]"
+		tag11 = "[?GLOBAL.ASG_CAN_curve_tag.GetTag]"
+		tag12 = "[?GLOBAL.ASG_FIN_curve_tag.GetTag]"
+		tag13 = "[?GLOBAL.ASG_HUN_curve_tag.GetTag]"
+		tag14 = "[?GLOBAL.ASG_RAJ_curve_tag.GetTag]"
+		tag15 = "[?GLOBAL.ASG_SAF_curve_tag.GetTag]"
+		tag16 = "[?GLOBAL.ASG_SIA_curve_tag.GetTag]"
+		tag17 = "[?GLOBAL.ASG_AXI_curve_tag.GetTag]"
+		tag18 = "[?GLOBAL.ASG_ALI_curve_tag.GetTag]"
+		# debug = yes
+	}
+}
+
 ASG_replot_military_graph = {
 	meta_effect = {
 		text = {

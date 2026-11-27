@@ -7,11 +7,20 @@ state = {
 	state_category = town
 
 	history = {
+		owner = KOB
 		buildings = {
 			infrastructure = 0
 		}
-		owner = KOB
-		add_core_of = KOA
+		victory_points = {
+			4968 1
+		}
+		victory_points = {
+			5027 1
+		}
+		victory_points = {
+			13857 20
+		}
+		add_core_of = KOB
 	}
 
 	provinces = {
