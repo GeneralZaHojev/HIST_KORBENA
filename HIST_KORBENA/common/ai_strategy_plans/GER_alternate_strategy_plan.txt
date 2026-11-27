@@ -897,6 +897,7 @@ German_alternate_fascist = {
 		GER_combined_arms # 35 
 		GER_form_the_jagdwaffe # 35
 		GER_around_maginot # 28
+		GER_war_with_france # 70, usually bypassed
 		GER_zentrale_planung  #70
 		GER_operation_weserubung # 28
 		GER_operation_tannenbaum # 70

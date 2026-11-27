@@ -24,6 +24,12 @@ ENG_historical_plan = {
 			}
 		}
 	}
+	abort = {
+		OR = {
+			GER = { has_completed_focus = GER_oppose_hitler }
+			GER = { has_completed_focus = GER_oppose_hitler_ww }
+		}
+	}
 
 	ai_national_focuses = {
 		limited_rearmament_focus #March 10 1936	
@@ -67,6 +73,7 @@ ENG_historical_plan = {
  		uk_iraq_focus#March 10 1943
  		uk_rock_focus#May 20 1943
  		singapore_focus#July 30 1943
+ 		ENG_royal_malay_regiment_focus
  		peninsular_focus
  		uk_amphibious_focus
  		uk_protect_suez

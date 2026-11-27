@@ -838,8 +838,9 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 10
-			build_cost_ic = 2
+			build_cost_ic = 2.2
 			weight = 2
+			reliability = -0.025
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -860,7 +861,7 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 9
-			build_cost_ic = 1.5
+			build_cost_ic = 1.8
 			weight = 2.5
 		}
 		xp_cost = 0
@@ -878,8 +879,9 @@ equipment_modules = {
 
 		add_stats = {
 			air_attack = 18
-			build_cost_ic = 3
+			build_cost_ic = 3.9
 			weight = 5
+			reliability = -0.025
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -888,7 +890,7 @@ equipment_modules = {
 		}
 		mission_type_stats = {
 			limit = {
-				cas
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 1
@@ -938,7 +940,7 @@ equipment_modules = {
 		}
 		mission_type_stats = {
 			limit = {
-				cas
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 2
@@ -988,7 +990,7 @@ equipment_modules = {
 		}
 		mission_type_stats = {
 			limit = {
-				cas
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 2
@@ -1038,7 +1040,7 @@ equipment_modules = {
 		}
 		mission_type_stats = {
 			limit = {
-				 cas
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 2
@@ -1062,13 +1064,13 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 			naval_bomber
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_agility = -15
@@ -1104,13 +1106,13 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 			naval_bomber
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_agility = -20
@@ -1146,13 +1148,13 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 			naval_bomber
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_agility = -20
@@ -1188,12 +1190,12 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 4
@@ -1217,13 +1219,13 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 			port_strike
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 8
@@ -1260,14 +1262,14 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 			strategic_bomber
 			port_strike
 		}
 		mission_type_stats = {
 			limit = {
 				cas
-				## attack_logistics
+				attack_logistics
 			}
 			add_stats = {
 				air_ground_attack = 6
@@ -1350,7 +1352,7 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 		}
 		dismantle_cost_ic = 1.5
 	}
@@ -1370,7 +1372,7 @@ equipment_modules = {
 		xp_cost = 0
 		allow_mission_type = {
 			cas
-			## attack_logistics
+			attack_logistics
 		}
 		dismantle_cost_ic = 3.5
 	}
@@ -1410,6 +1412,7 @@ equipment_modules = {
 	torpedo_mounting_2 = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
@@ -1442,6 +1445,7 @@ equipment_modules = {
 	torpedo_mounting_3 = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting_2
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
@@ -1513,6 +1517,7 @@ equipment_modules = {
 	guided_anti_ship_missile = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
+		parent = torpedo_mounting_3
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
@@ -2247,7 +2252,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 
@@ -2296,7 +2301,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 
@@ -2345,7 +2350,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 			add_stats = {
@@ -2393,7 +2398,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 			add_stats = {
@@ -2441,7 +2446,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 			add_stats = {
@@ -2485,7 +2490,7 @@ equipment_modules = {
 				strategic_bomber
 				naval_patrol
 				cas
-				## attack_logistics
+				attack_logistics
 				naval_mines_planting
 			}
 			add_stats = {

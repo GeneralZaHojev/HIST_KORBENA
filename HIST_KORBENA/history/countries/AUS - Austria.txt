@@ -155,6 +155,7 @@ IF = {
 	recruit_character = AUS_anton_kienbauer
 	recruit_character = AUS_julius_deutsch
 	recruit_character = AUS_alfred_jansa
+	recruit_character = AUS_wilhelm_gebauer
 	recruit_character = AUS_theodor_korner
 	recruit_character = AUS_arthur_von_pongracz
 	recruit_character = AUS_gottfried_freiherr_von_banfeld
@@ -295,5 +296,10 @@ set_popularities = {
 
 set_stability = 0.50
 
-
+if = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+	}
+	add_ideas = AUS_austrofascism_fake_ns
+}
 

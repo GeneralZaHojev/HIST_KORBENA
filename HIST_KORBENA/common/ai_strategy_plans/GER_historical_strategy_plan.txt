@@ -86,6 +86,7 @@ German_historical = {
 					has_completed_focus = FRA_utilize_the_leagues
 					has_completed_focus = FRA_invite_communist_ministers
 					has_completed_focus = FRA_leftist_rhetoric
+					has_completed_focus = FRA_right_wing_rhetoric
 				}
 			}
 			any_country_with_original_tag = {
@@ -159,6 +160,7 @@ German_historical = {
 		GER_operation_weserubung 				#28 	APR 40 		
 		GER_develop_the_knickebein				#35 	39-40 (note this slot can be used for something else)	
 		GER_around_maginot 						#28 	MAY 40 		 
+		GER_war_with_france 					#70 	SEP 39 - is usually BYPASSED 
 		GER_instill_auftragstaktik				#35 	(whenever)
 		GER_strengthen_the_kriegsmarine			#35 	(whenever)
 		GER_panzergrenadier						#70 	(after Danzig before Barbarossa)
