@@ -5,7 +5,12 @@
 add_namespace = MUN_czech
 add_namespace = MUN_czech_skoda_priority
 add_namespace = MUN_czech_bop
+<<<<<<< Updated upstream
 add_namespace = MUN_the_fall_of_the_republic 
+=======
+add_namespace = MUN_the_fall_of_the_republic
+add_namespace = MUN_czech_exile
+>>>>>>> Stashed changes
 add_namespace = MUN_czech.news
 
 #########################
@@ -174,7 +179,15 @@ country_event = {
 				}	
 			}
 			GER = {
+<<<<<<< Updated upstream
 				has_completed_focus = GER_remilitarize_the_rhineland
+=======
+				OR = {
+					has_completed_focus = GER_remilitarize_the_rhineland
+					has_completed_focus = GER_oppose_hitler
+					has_completed_focus = GER_oppose_hitler_ww
+				}
+>>>>>>> Stashed changes
 			}
 			HUN = { 
 				OR = {
@@ -503,6 +516,12 @@ country_event = { #Triggers MUN_czech.2
 			original_tag = SDL #the call is coming from inside the house
 		}
 		exists = yes
+<<<<<<< Updated upstream
+=======
+		NOT = {
+			is_subject_of = CZE
+		}
+>>>>>>> Stashed changes
 		any_country_with_original_tag = {
 			original_tag_to_check = CZE
 			has_idea = CZE_sudeten_german_quandary
@@ -983,6 +1002,13 @@ country_event = {
 
 	option = { #Yes, stick by them!
 		name = MUN_czech.7.a
+<<<<<<< Updated upstream
+=======
+		
+		trigger = {
+			always = no
+		}
+>>>>>>> Stashed changes
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1004,6 +1030,15 @@ country_event = {
 			}
 			modifier = {
 				CZE = {
+<<<<<<< Updated upstream
+=======
+					is_major = yes
+				}
+				add = 1
+			}
+			modifier = {
+				CZE = {
+>>>>>>> Stashed changes
 					has_completed_focus = CZE_forgive_trading_debts
 				}
 				factor = 1.1
@@ -1158,10 +1193,88 @@ country_event = {
 			transfer_state = 89
 			transfer_state = 91
 		}
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 524999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.2
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 	}
 
 	option = {	#Refuse
 		name = MUN_czech.1020.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 5
+				}
+				factor = 5
+			}
+			modifier = {
+				ROOT = {
+					has_war = no
+				}
+				FROM = {
+					has_war_with_major = yes
+				}
+				factor = 10
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			country_event = MUN_czech.1003
 		}
@@ -1181,6 +1294,60 @@ country_event = {
 	
 	option = {	#Accept
 		name = MUN_czech.1002.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 324999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.2
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		every_subject_country = {
 			limit = {
 				OR = {
@@ -1199,6 +1366,21 @@ country_event = {
 
 	option = {	#Refuse
 		name = MUN_czech.1002.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 10
+				}
+				factor = 5
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			country_event = MUN_czech.1003
 		}
@@ -1309,6 +1491,25 @@ country_event = {
 
 	option = {
 		name = MUN_czech.1011.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				add = 0.5
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				add = 1
+			}
+		}
+>>>>>>> Stashed changes
 		if = {
 			limit = {
 				FROM = {
@@ -1330,6 +1531,19 @@ country_event = {
 
 	option = {
 		name = MUN_czech.1040.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < -10
+				}
+				factor = 2
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1006 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -1346,6 +1560,23 @@ country_event = {	#puppet Hungary, but they get expanded
 	is_triggered_only = yes
 
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					is_faction_leader = yes
+					is_major = yes
+					strength_ratio = {
+						tag = FROM
+						ratio > 1
+					}
+				}
+			}
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1013.a
 		FROM = {
 			add_named_threat = {
@@ -1381,6 +1612,7 @@ country_event = {	#puppet Hungary, but they get expanded
 	option = {
 		ai_chance = {
 			base = 1
+<<<<<<< Updated upstream
 			modifier = {
 				factor = 0
 				OR = {
@@ -1392,6 +1624,8 @@ country_event = {	#puppet Hungary, but they get expanded
 					}
 				}
 			}
+=======
+>>>>>>> Stashed changes
 		}
 		name = MUN_czech.1007.b
 		FROM = {
@@ -1410,6 +1644,31 @@ country_event = {	#event to France that Czechoslovakia wants to ally someone
 
 	option = {
 		name = MUN_czech.1008.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				add = 0.5
+			}
+			modifier = {
+				OR = {
+					has_opinion = {
+						target = FROM
+						value > 60
+					}
+					has_opinion = {
+						target = event_target:CZE_invited_country
+						value > 15
+					}
+				}
+				factor = 2
+			}
+		}
+>>>>>>> Stashed changes
 		event_target:CZE_invited_country = {
 			country_event = generic.5
 		}
@@ -1417,6 +1676,19 @@ country_event = {	#event to France that Czechoslovakia wants to ally someone
 
 	option = {
 		name = MUN_czech.1008.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < -25
+				}
+				factor = 2
+			}
+		}
+>>>>>>> Stashed changes
 	}
 }
 
@@ -1456,6 +1728,34 @@ country_event = {	#Czechoslovakia invites country that claims its territory into
 		FROM = {
 			country_event = MUN_czech.1013
 		}
+<<<<<<< Updated upstream
+=======
+		#custom_effect_tooltip = generic_skip_one_line_tt
+		effect_tooltip = {
+			custom_effect_tooltip = if_they_accept_newline_tt
+			if = {
+				limit = {
+					original_tag = POL
+					FROM = {
+						owns_state = 72
+					}
+				}
+				transfer_state = 72
+			}
+			else_if = {
+				limit = {
+					original_tag = HUN
+					FROM = {
+						owns_state = 664
+					}
+				}
+				transfer_state = 664
+			}
+			FROM = {
+				add_to_faction = ROOT
+			}
+		}
+>>>>>>> Stashed changes
 	}
 
 	option = {		#no
@@ -1477,6 +1777,60 @@ country_event = {	#Czechoslovakia invites France to lead the little entente
 
 	option = {		#sure
 		name = MUN_czech.1010.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 324999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.2
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			add_to_faction = ROOT
 		}
@@ -1485,6 +1839,21 @@ country_event = {	#Czechoslovakia invites France to lead the little entente
 
 	option = {		#no
 		name = MUN_czech.1010.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 6
+				}
+				factor = 5
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1010 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -1502,6 +1871,66 @@ country_event = {	#Czechoslovakia offers protection agreement to Switzerland
 
 	option = {		#sure
 		name = MUN_czech.1011.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 324999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 5
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.3
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_ally_austria
+				}
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		give_guarantee = CZE
 		CZE = {
 			give_guarantee = ROOT
@@ -1510,6 +1939,27 @@ country_event = {	#Czechoslovakia offers protection agreement to Switzerland
 
 	option = {		#no
 		name = MUN_czech.1011.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					has_added_tension_amount > 5
+				}
+				factor = 2
+			}
+			modifier = { #EVIL! EVIL!
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 25
+				}
+				factor = 25
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1011 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -1527,6 +1977,66 @@ country_event = {	#Czechoslovakia pressures Romania with USSR
 
 	option = {		#sure
 		name = MUN_czech.1012.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 324999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.75
+				}
+			}
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1 #I'll get some after this though >:)
+				}
+				factor = 5
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.3
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_ally_austria
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			add_named_threat = {
 				threat = 5
@@ -1646,6 +2156,47 @@ country_event = {	#event to USSR for cooperation - request guarantees
 	option = {		#sure
 		name = MUN_czech.1014.a
 		give_guarantee = FROM
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.5
+			}
+			modifier = {
+				FROM = {
+					is_neighbor_of = ROOT
+				}
+				factor = 5
+			}
+			modifier = {
+				factor = 5
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.01
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				is_major = yes
+				has_government = FROM
+				factor = 5
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			give_guarantee = ROOT
 		}
@@ -1653,6 +2204,48 @@ country_event = {	#event to USSR for cooperation - request guarantees
 
 	option = {		#no
 		name = MUN_czech.1014.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				NOT = {
+					has_government = FROM
+				}
+				factor = 2
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 2
+			}
+			modifier = {
+				FROM = {
+					NOT = {
+						is_neighbor_of = ROOT
+					}
+				}
+				factor = 2
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_contact_henlein
+				}
+				factor = 2
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_feeding_the_alligator
+				}
+				factor = 25
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_work_with_germany
+				}
+				factor = 50
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1014 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -1670,6 +2263,42 @@ country_event = {	#event to USSR/France for cooperation - faction merge
 
 	option = {		#sure
 		name = MUN_czech.1015.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				add = 0.5
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+				factor = 2
+			}
+			modifier = {
+				FROM = {
+					is_neighbor_of = ROOT
+				}
+				factor = 1.5
+			}
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 2
+			}
+		}
+>>>>>>> Stashed changes
 		every_allied_country = {
 			FROM = {
 				add_to_faction = PREV
@@ -1682,6 +2311,26 @@ country_event = {	#event to USSR/France for cooperation - faction merge
 
 	option = {		#no
 		name = MUN_czech.1015.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				NOT = {
+					has_government = FROM
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					NOT = {
+						is_neighbor_of = ROOT
+					}
+				}
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1015 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -1699,6 +2348,42 @@ country_event = {	#event to GER for non-agression pact	#aka Haushofer-Krofta Pac
 
 	option = {		#sure
 		name = MUN_czech.1016.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				NOT =  {
+					has_government = FROM
+				}
+				is_historical_focus_on = yes
+				factor = 0.90
+			}
+			modifier = {
+				factor = 1.5
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_contact_henlein
+				}
+				factor = 1.5
+			}
+			modifier = {
+				CZE = {
+					has_completed_focus = CZE_feeding_the_alligator
+				}
+				factor = 3
+			}
+		}
+>>>>>>> Stashed changes
 		diplomatic_relation = {
 			country = FROM
 			relation = non_aggression_pact
@@ -1714,6 +2399,22 @@ country_event = {	#event to GER for non-agression pact	#aka Haushofer-Krofta Pac
 	option = {		#no
 		name = MUN_czech.1016.b
 		set_variable = { global.CZE_origin_event = 1016 }	#used to decide loc
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				NOT = {
+					has_government = FROM
+				}
+				factor = 1.1
+			}
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			country_event = MUN_czech.1026
 		}
@@ -1733,10 +2434,66 @@ country_event = {	#event to FRA/POL for joint invasion of Germany
 	option = {		#sure
 		name = MUN_czech.1017.a
 		set_country_flag = CZE_agreed_to_germany_invasion
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					is_major = yes
+				}
+				factor = 1.2
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 554999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.2
+			}
+		}
+>>>>>>> Stashed changes
 	}
 
 	option = {		#no
 		name = MUN_czech.1017.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < -25
+				}
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 	}
 }
 
@@ -1809,6 +2566,61 @@ country_event = {	#event to Czechoslovakia about joint invasion of Germany, fire
 
 	option = {		#sure
 		name = MUN_czech.1018.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 554999 }
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				GER = {
+					NOT = {
+						has_government = FROM
+					}
+				}
+				factor = 1.2
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.2
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		declare_war_on = {
 			target = GER
 			type = annex_everything
@@ -1827,6 +2639,27 @@ country_event = {	#event to Czechoslovakia about joint invasion of Germany, fire
 
 	option = {		#no
 		name = MUN_czech.1018.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+				}
+				factor = 1.5
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 	}
 }
 
@@ -1840,6 +2673,54 @@ country_event = {	#event to Poland to demand Katowice
 
 	option = {		#sure
 		name = MUN_czech.1019.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+				factor = 1.1
+			}
+			modifier = {
+				factor = 10
+				strength_ratio = {
+					tag = FROM
+					ratio < 1
+				}
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.2
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		762 = {
 			transfer_state_to = FROM
 		}
@@ -1850,7 +2731,30 @@ country_event = {	#event to Poland to demand Katowice
 	}
 
 	option = {		#no
+<<<<<<< Updated upstream
 		name = MUN_czech.1022.b		#reused
+=======
+		name = MUN_czech.1020.b		#reused
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 5
+				}
+				factor = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			762 = {
 				add_claim_by = FROM
@@ -1870,6 +2774,25 @@ country_event = {	#conditional investment		#marijn211: Event completed
 
 	option = {		#sure
 		name = MUN_czech.1020.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		custom_effect_tooltip = CZE_investment_effects_tt
 		if = {
 			limit = {
@@ -1949,6 +2872,16 @@ country_event = {	#conditional investment		#marijn211: Event completed
 				factor = 0
 				is_in_faction_with = FROM
 			}
+<<<<<<< Updated upstream
+=======
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 1.1
+			}
+>>>>>>> Stashed changes
 		}
 		set_variable = { global.CZE_origin_event = 1020 }
 		FROM = {
@@ -1970,6 +2903,22 @@ country_event = {	#restoration of the Austro-Hungarian customs union
 		name = MUN_czech.1021.a
 		ai_chance = {
 			base = 2
+<<<<<<< Updated upstream
+=======
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 2
+			}
+>>>>>>> Stashed changes
 		}
 		set_country_flag = CZE_trade_agreement
 		if = {
@@ -2121,6 +3070,25 @@ country_event = {	#restoration of the Austro-Hungarian customs union
 		name = MUN_czech.1021.b
 		ai_chance = {
 			base = 1
+<<<<<<< Updated upstream
+=======
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 5
+				}
+				factor = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < 0
+				}
+				factor = 1.1
+			}
+>>>>>>> Stashed changes
 		}
 	}
 }
@@ -2233,8 +3201,21 @@ country_event = {	#66 owner requested white peace with CZE
 				enemies_strength_ratio > 1
 			}
 			modifier = {
+<<<<<<< Updated upstream
 				factor = 3
 				surrender_progress > 0.3
+=======
+				factor = 1.1
+				surrender_progress > 0.25
+			}
+			modifier = {
+				factor = 3
+				surrender_progress > 0.30
+			}
+			modifier = {
+				factor = 10
+				surrender_progress > 0.50
+>>>>>>> Stashed changes
 			}
 			modifier = {
 				factor = 0
@@ -2287,7 +3268,21 @@ country_event = {	#66 owner requested white peace with CZE
 
 	option = {	#Refuse
 		name = MUN_czech.1024.b
+<<<<<<< Updated upstream
 
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				surrender_progress < 0.05
+				add = 1
+			}
+			modifier = {
+				surrender_progress > 0.50
+				factor = 0.1
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1024 }
 		FROM = {
 			country_event = MUN_czech.1026
@@ -2478,6 +3473,48 @@ country_event = {		#Limited cooperation with USSR
 
 	option = {
 		name = MUN_czech.1027.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+				factor = 1.5
+			}
+			modifier = {
+				FROM = {
+					is_guaranteed_by = ROOT
+				}
+				factor = 1.5
+			}
+			modifier = {
+				FROM = {
+					has_non_aggression_pact_with = ROOT
+				}
+				factor = 1.1
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 3
+			}
+		}
+>>>>>>> Stashed changes
 		if = {
 		 	limit = {
 		 		controls_state = 202
@@ -2495,6 +3532,19 @@ country_event = {		#Limited cooperation with USSR
 	}
 	option = {
 		name = MUN_czech.1027.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < -9
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		set_variable = { global.CZE_origin_event = 1027 }	#used to decide loc
 		FROM = {
 			country_event = MUN_czech.1026
@@ -2562,11 +3612,93 @@ country_event = { #Balkan union puppeting
 
 	is_triggered_only = yes
 
+<<<<<<< Updated upstream
 	option = {
 		name = MUN_czech.1030.a
 		FROM = {
 			# hidden_effect = {
 			# 	set_cosmetic_tag = UBF_united_balkan_federation
+=======
+	option = { #yes
+		name = MUN_czech.1030.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+				factor = 1.2
+			}
+			modifier = {
+				ROOT = {
+					is_guaranteed_by = FROM
+				}
+				factor = 1.2
+			}
+			modifier = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BUL
+							original_tag = GRE
+							original_tag = HUN
+							original_tag = AUS
+							original_tag = YUG
+						}
+					}
+					FROM = {
+						has_completed_focus = CZE_forgive_trading_debts
+					}
+				}
+				factor = 1.1
+			}
+			modifier = {
+				if = {
+					limit = {
+						OR = {
+							original_tag = BUL
+							original_tag = GRE
+							original_tag = HUN
+							original_tag = AUS
+							original_tag = YUG
+							original_tag = ALB
+						}
+					}
+					FROM = {
+						has_completed_focus = CZE_improve_balkan_trade_relations
+					}
+				}
+				factor = 1.5
+			}
+			modifier = {
+				FROM = {
+					has_non_aggression_pact_with = ROOT
+				}
+				factor = 1.1
+			}
+			modifier = {
+				is_ally_with = FROM
+				factor = 2
+			}
+		}
+		FROM = {
+			# hidden_effect = {
+			# 	set_cosmetic_tag = CZE_union_expanded
+>>>>>>> Stashed changes
 			# }
 			set_autonomy = {
 				target = ROOT
@@ -2581,8 +3713,23 @@ country_event = { #Balkan union puppeting
 			country_event = MUN_czech.1048
 		}
 	}
+<<<<<<< Updated upstream
 	option = {
 		name = MUN_czech.1030.b
+=======
+	option = { #no
+		name = MUN_czech.1030.b
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value < -9
+				}
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			country_event = MUN_czech.1003
 		}
@@ -2598,6 +3745,32 @@ country_event = { #Merging with Poland
 	is_triggered_only = yes
 
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 6
+			modifier = {
+				has_government = FROM
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_added_tension_amount < 1
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_completed_focus = CZE_reintegrate_cross_border_rail_connections
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1031.a
 		hidden_effect = {
 			every_core_state = {
@@ -2609,11 +3782,40 @@ country_event = { #Merging with Poland
 				target = ROOT
 				transfer_troops = yes
 			}
+<<<<<<< Updated upstream
+=======
+			ROOT = {
+				every_unit_leader = {
+					set_nationality = FROM
+				}
+			}
+>>>>>>> Stashed changes
 			set_cosmetic_tag = CZE_POL_union
 		}
 		custom_effect_tooltip = GAME_OVER_TT
 	}
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 4
+			modifier = {
+				add = -2
+				FROM = {
+					is_major = yes
+				}
+			}
+			modifier = {
+				FROM = {
+					NOT = {
+						has_government = ROOT
+					}
+					has_added_tension_amount > 6
+					}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1031.b
 		set_variable = { global.CZE_origin_event = 1031 }	#used to decide loc
 		FROM = {
@@ -2782,6 +3984,25 @@ country_event = { #CZE asks to enter exile
 
 	option = {
 		name = MUN_czech.1033.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 2
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				factor = 2
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.1
+			}
+		}
+>>>>>>> Stashed changes
 		FROM = {
 			hidden_effect = {
 				overlord = {
@@ -2948,6 +4169,12 @@ country_event = {
 					country_event = { id = MUN_the_fall_of_the_republic.3 days = 10 } #it keeps getting worse huh?
 				}
 			}
+<<<<<<< Updated upstream
+=======
+			every_core_state = {
+				set_state_flag = CZE_restore_core
+			}
+>>>>>>> Stashed changes
 		}
 	}
 
@@ -3020,6 +4247,10 @@ country_event = {
 						has_cosmetic_tag = CZE_fall_of_the_republic
 					}
 				}
+<<<<<<< Updated upstream
+=======
+				set_country_flag = achievement_became_second_cze_republic
+>>>>>>> Stashed changes
 				set_cosmetic_tag = CZE_second_republic
 			}
 			set_country_flag = CZE_gave_in_to_hlinka_guard
@@ -3103,6 +4334,10 @@ country_event = {
 						has_cosmetic_tag = CZE_fall_of_the_republic
 					}
 				}
+<<<<<<< Updated upstream
+=======
+				set_country_flag = achievement_became_second_cze_republic
+>>>>>>> Stashed changes
 				set_cosmetic_tag = CZE_second_republic
 			}
 			set_country_flag = CZE_gave_in_to_hlinka_guard
@@ -3180,6 +4415,24 @@ country_event = {
 			custom_effect_tooltip = MUN_czech.1034.c_tt
 		}
 	}
+<<<<<<< Updated upstream
+=======
+
+	after = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = CZE_restore_core
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_core_of = ROOT
+				clr_state_flag = CZE_restore_core
+			}
+		}
+	}
+>>>>>>> Stashed changes
 }
 
 country_event = {
@@ -3506,6 +4759,79 @@ country_event = { #CZE wants to form a trade union
 
 	option = { #yes
 		name = MUN_czech.1040.a
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				FROM = {
+					is_ai = no
+				}
+				add = 1
+			}
+			modifier = {
+				FROM = {
+					has_completed_focus = CZE_slovakia_autonomy_agreement
+				}
+				factor = 1.1
+			}
+			modifier = {
+				FROM = {
+					has_completed_focus = CZE_cut_carpathia_loose
+				}
+				factor = 1.2
+			}
+			modifier = {
+				FROM = {
+					has_completed_focus = CZE_apart_but_togather
+				}
+				factor = 1.3
+			}
+			modifier = {
+				FROM = {
+					has_army_manpower = { size > 324999 }
+				}
+				factor = 1.5
+			}
+			modifier = {
+				FROM = {
+					has_completed_focus = CZE_the_second_fortification_program
+				}
+				factor = 1.1
+			}
+			modifier = {
+				has_country_flag = FROM_said_yes_to_trade_union
+				factor = 1.5
+			}
+			modifier = {
+				threat > 25
+				factor = 1.1
+			}
+			modifier = {
+				threat > 50
+				factor = 1.2
+			}
+			modifier = {
+				threat > 75
+				factor = 1.3
+			}
+			modifier = {
+				has_opinion = {
+					target = FROM
+					value > 50
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_non_aggression_pact_with = CZE
+				factor = 1.2
+			}
+			modifier = {
+				has_government = FROM
+				factor = 1.5
+			}
+		}
+>>>>>>> Stashed changes
 		add_opinion_modifier = {
     		target = FROM
     		modifier = CZE_customs_union_member
@@ -3522,6 +4848,12 @@ country_event = { #CZE wants to form a trade union
 
 	option = { #no
 		name = MUN_czech.1040.b
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 2
+		}
+>>>>>>> Stashed changes
 		country_event = { id = MUN_czech.1041 hours = 4 }
 	}
 }
@@ -3648,7 +4980,11 @@ country_event = { #CZE demands ROOT to become annexed
 				FROM = {
 					is_ai = no
 				}
+<<<<<<< Updated upstream
 				factor = 0
+=======
+				factor = 0.1
+>>>>>>> Stashed changes
 			}
 		}
 		FROM = {
@@ -3740,6 +5076,22 @@ country_event = { #divided nation is over
 
 	is_triggered_only = yes
 
+<<<<<<< Updated upstream
+=======
+	immediate = {
+		hidden_effect = {	#this is for if the very last decision was interrupted by releasing
+			if = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = CZE_a_divided_nation_dynamic_modifier
+					}
+				}
+				remove_dynamic_modifier = { modifier = CZE_a_divided_nation_dynamic_modifier }
+			}
+		}
+	}
+
+>>>>>>> Stashed changes
 	option = { #good news
 		name = MUN_czech.1046.a
 		custom_effect_tooltip = generic_has_happen_tt
@@ -3857,6 +5209,19 @@ country_event = {
 	option = {
 		name = MUN_czech.1046.a		#reused
 		trigger = {
+<<<<<<< Updated upstream
+=======
+			check_variable = { global.CZE_origin_event = 1056 }
+		}
+		custom_effect_tooltip = generic_has_happen_tt
+		effect_tooltip = {
+			transfer_state = 975
+		}
+	}
+	option = {
+		name = MUN_czech.1046.a		#reused
+		trigger = {
+>>>>>>> Stashed changes
 			check_variable = { global.CZE_origin_event = 1024 }
 		}
 		custom_effect_tooltip = generic_has_happen_tt
@@ -3876,6 +5241,10 @@ country_event = {
 			NOT = {
 				check_variable = { global.CZE_origin_event = 1019 }
 				check_variable = { global.CZE_origin_event = 1024 }
+<<<<<<< Updated upstream
+=======
+				check_variable = { global.CZE_origin_event = 1056 }
+>>>>>>> Stashed changes
 			}
 		}
 	}
@@ -4066,11 +5435,34 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 2
+				original_tag = ROM
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					target = FROM
+					value > 75
+				}
+			}
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1052.a
 		give_military_access = SOV
 		add_ideas = CZE_soviet_influence
 	}
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 2
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1007.b
 	}
 }
@@ -4085,6 +5477,33 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0.25
+				any_other_country = {
+					OR = {
+						is_in_faction_with = ROOT
+						AND = {
+							has_guaranteed = ROOT
+							NOT = {
+								has_guaranteed = FROM
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.66
+				}
+			}
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1012.a
 		FROM = {
 			add_named_threat = {
@@ -4095,6 +5514,12 @@ country_event = {
 		}
 	}
 	option = {
+<<<<<<< Updated upstream
+=======
+		ai_chance = {
+			base = 1
+		}
+>>>>>>> Stashed changes
 		name = MUN_czech.1012.b
 		FROM = {
 			country_event = MUN_czech.1003
@@ -4127,7 +5552,12 @@ country_event = {
 		declare_war_on = {
 			target = LIT
 			type = annex_everything
+<<<<<<< Updated upstream
 		}#help Poland form this more easily, meaning getting them as an ally becomes easier
+=======
+		}
+		activate_decision = form_commonwealth	#help Poland form this more easily, meaning getting them as an ally becomes easier
+>>>>>>> Stashed changes
 		FROM = {
 			add_to_war = {
 				targeted_alliance = ROOT
@@ -4188,6 +5618,89 @@ country_event = {
 	}
 }
 
+<<<<<<< Updated upstream
+=======
+country_event = {	#event to Austria to demand Burgenland
+	id = MUN_czech.1056
+	title = MUN_czech.1056.t
+	desc = MUN_czech.1056.d
+	picture = GFX_report_event_czech_soldiers_02
+
+	is_triggered_only = yes
+
+	option = {		#sure
+		name = MUN_czech.1019.a		#reused
+		ai_chance = {
+			base = 2
+			modifier = {
+				factor = 0.5
+				any_other_country = {
+					OR = {
+						is_in_faction_with = ROOT
+						AND = {
+							has_guaranteed = ROOT
+							NOT = {
+								has_guaranteed = FROM
+							}
+						}
+					}
+				}
+			}
+			modifier = {	#slightly more sympathetic to same ideology CZE protecting itself
+				factor = 2
+				has_government = democratic
+				FROM = {
+					has_government = democratic
+				}
+			}
+			modifier = {
+				factor = 3
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.5
+				}
+			}
+			modifier = {
+				factor = 0
+				AND = {
+					OR = {
+						original_tag = HUN
+						has_government = fascism
+					}
+					NOT = {
+						original_tag = AUS
+					}
+				}
+				strength_ratio = {
+					tag = FROM
+					ratio > 1
+				}
+			}
+		}
+		975 = {
+			transfer_state_to = FROM
+		}
+		FROM = {
+			set_variable = { global.CZE_origin_event = 1056 }
+			country_event = MUN_czech.1048
+		}
+	}
+
+	option = {		#no
+		name = MUN_czech.1020.b		#reused
+		ai_chance = {
+			base = 2
+		}
+		FROM = {
+			975 = {
+				add_claim_by = FROM
+			}
+			country_event = MUN_czech.1003
+		}
+	}
+}
+
+>>>>>>> Stashed changes
 #KAAS - marijn211: let's me easily find this line
 
 ########################
@@ -4253,6 +5766,10 @@ country_event = { #The government is on its last legs
 				limit = {
 					has_government = democratic
 				}
+<<<<<<< Updated upstream
+=======
+				set_country_flag = achievement_became_second_cze_republic
+>>>>>>> Stashed changes
 				set_cosmetic_tag = CZE_second_republic
 				set_party_name = {
 					ideology = neutrality
@@ -4334,6 +5851,10 @@ country_event = { #The government is on its last legs
 	 			promote_character = yes
 			}
 			add_country_leader_trait = CZE_3rd_prezident
+<<<<<<< Updated upstream
+=======
+			set_country_flag = achievement_became_second_cze_republic
+>>>>>>> Stashed changes
 			set_cosmetic_tag = CZE_fall_of_the_republic
 		}
 		effect_tooltip = {
@@ -4421,6 +5942,17 @@ country_event = { #Now Ruthenian wants out
 
 	is_triggered_only = yes
 
+<<<<<<< Updated upstream
+=======
+	immediate = {
+		hidden_effect = {
+			every_core_state = {
+				set_state_flag = CZE_restore_core
+			}
+		}
+	}
+
+>>>>>>> Stashed changes
 	option = { #Okay
 		name = MUN_the_fall_of_the_republic.3.a
 		ai_chance = {
@@ -4573,6 +6105,24 @@ country_event = { #Now Ruthenian wants out
 			RUT = { change_tag_from = ROOT }
 		}
 	}
+<<<<<<< Updated upstream
+=======
+
+	after = {
+		hidden_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = CZE_restore_core
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+				add_core_of = ROOT
+				clr_state_flag = CZE_restore_core
+			}
+		}
+	}
+>>>>>>> Stashed changes
 }
 
 country_event = { #For FROM, time to go after RUT
@@ -4767,6 +6317,463 @@ country_event = { #RUT gaves in
 	}
 }
 
+<<<<<<< Updated upstream
+=======
+
+country_event = { #Exile event for when Czech dies, more sanity checks are on event fire effect
+	id = MUN_czech_exile.1
+	title = MUN_czech_exile.1.t
+	desc = MUN_czech_exile.1.d
+	picture = GFX_report_event_CZE_exiles_flag_army_soldiers_and_officers
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					original_tag = SOV
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_richard_tesarzhik
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_richard_tesarzhik
+						}
+						set_nationality = ROOT
+					}
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_vladimir_prikryl
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_vladimir_prikryl
+						}
+						set_nationality = ROOT
+					}
+				}
+				if = {
+					limit = {
+						has_character = CZE_vladimir_prikryl
+					}
+					remove_trait = {
+						character = CZE_vladimir_prikryl
+						slot = high_command
+						trait = army_artillery_2
+					}
+					add_trait = {
+						character = CZE_vladimir_prikryl
+						slot = high_command
+						trait = army_guerilla_organizer_1
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = FRA
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_louis_eugene_faucher 
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_louis_eugene_faucher
+						}
+						set_nationality = ROOT
+					}
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_josef_shnejdarek
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_josef_shnejdarek
+						}
+						set_nationality = ROOT
+					}
+				}
+				if = {
+					limit = {
+						SLO = {
+							OR = {
+								exists = no
+								is_subject_of = GER
+								is_subject_of = CZE
+								is_subject_of = FRA
+								has_government = fascism
+							}
+						}
+					}
+					every_possible_country = {
+						limit = {
+							has_character = CZE_rudolf_viest
+						}
+						random_character = {
+							limit = {
+								is_character = CZE_rudolf_viest
+							}
+							set_nationality = ROOT
+						}
+					}
+				}
+				FRA = {
+					if = {
+						limit = {
+							has_character = CZE_josef_shnejdarek
+							CZE_josef_shnejdarek = {
+								is_field_marshal = yes
+							}
+						}
+						CZE_josef_shnejdarek = {
+							demote_leader = yes
+						}
+					}
+					if = {
+						limit = {
+							has_character = CZE_josef_shnejdarek
+							CZE_josef_shnejdarek = {
+								has_trait = recently_promoted
+							}
+						}
+						CZE_josef_shnejdarek = {
+							remove_trait = { 
+								trait = recently_promoted
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = ENG
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_sergej_ingr
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_sergej_ingr
+						}
+						set_nationality = ROOT
+					}
+				}
+				every_possible_country = {
+					limit = {
+						has_character = CZE_frantisek_moravec
+					}
+					random_character = {
+						limit = {
+							is_character = CZE_frantisek_moravec
+						}
+						set_nationality = ROOT
+					}
+				}
+				if = { #Sorry he can't keep his CZE base stats on England
+					limit = {
+						has_dlc = "La Resistance"
+						has_character = CZE_frantisek_moravec
+					}
+					remove_trait = {
+						character = CZE_frantisek_moravec
+						slot = political_advisor
+						trait = bold_intelligence_officer
+					}
+					add_trait = {
+						character = CZE_frantisek_moravec
+						slot = political_advisor
+						trait = bold_intelligence_officer_lesser
+					}
+				}
+				if = { #Sorry, he can't keep his CZE base stats on England
+					limit = {
+						NOT = {
+							has_dlc = "La Resistance"
+						}
+						has_character = CZE_frantisek_moravec
+					}
+					remove_trait = {
+						character = CZE_frantisek_moravec
+						slot = political_advisor
+						trait = bold_intelligence_officer_no_lar
+					}
+					add_trait = {
+						character = CZE_frantisek_moravec
+						slot = political_advisor
+						trait = bold_intelligence_officer_no_lar_lesser
+					}
+				}
+			}
+		}
+	}
+
+	option = { #Welcome
+		name = MUN_czech_exile.1.a
+		if = {
+			limit = {
+				original_tag = POL
+			}
+			add_manpower = 900 #Roughly based on the initial inflex that stayed in Poland
+			if = {
+				limit = {
+					CZE = {
+						is_ai = yes #Don't steal from player
+						has_character = CZE_josef_frantisek
+					}
+				}
+				CZE = {
+					hidden_effect = {
+						retire_character = CZE_josef_frantisek #Can't have two of you running around
+					}
+				}
+				ROOT = {
+					custom_effect_tooltip = generic_skip_one_line_tt
+
+					add_ace = {
+						name = "Josef"
+						surname = "František"
+						callsign = "Cloverleaf"
+						type = fighter_good
+						is_female = no
+					}
+				}
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_timed_idea = {
+				idea = CZE_exiles_idea_POL
+				days = 435
+			}
+		}
+		if = {
+			limit = {
+				original_tag = SOV
+			}
+			add_manpower = 6000 #Really rough napkin math on initial inflex of Czechs in The Eastern Group of the Czechoslovak Army that stayed in Soviet Union and fought
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_timed_idea = {
+				idea = CZE_exiles_idea_SOV
+				days = 365
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = generic_has_happen_tt
+			custom_effect_tooltip = available_military_high_command
+			show_ideas_tooltip = CZE_vladimir_prikryl
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			show_unit_leaders_tooltip = CZE_richard_tesarzhik
+
+		}
+		if = {
+			limit = {
+				original_tag = FRA
+			}
+			add_manpower = 1100 #Roughly based on the initial inflex
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					CZE = {
+						NOT = {
+							has_completed_focus = CZE_contact_the_czech_and_slovak_legion
+						}
+					}
+				}
+				FRA = {
+					add_ace = {
+						name = "František"
+						surname = "Peřina"
+						callsign = "François"
+						type = fighter_good
+						is_female = no
+					}
+					add_ace = {
+						name = "Václav"
+						surname = "Jícha"
+						callsign = "Lev"		#made up based on coat of arms
+						type = fighter_good
+						is_female = no
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+			}
+
+			add_timed_idea = {
+				idea = CZE_exiles_idea_FRA
+				days = 435
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = generic_has_happen_tt
+			if = {
+				limit = {
+					has_character = CZE_louis_eugene_faucher 
+				}
+				custom_effect_tooltip = available_military_high_command
+				show_ideas_tooltip = CZE_louis_eugene_faucher_high_command
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+			if = {
+				limit = {
+					has_character = CZE_rudolf_viest
+				}
+				show_unit_leaders_tooltip = CZE_rudolf_viest
+			}
+			if = {
+				limit = {
+					has_character = CZE_josef_shnejdarek
+				}
+				show_unit_leaders_tooltip = CZE_josef_shnejdarek
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_manpower = 1000 #Roughly based on the initial inflex, not inflex after the Fall of France. Which was of course more.
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			add_timed_idea = {
+				idea = CZE_exiles_idea_ENG
+				days = 435
+			}
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			if = {
+				limit = {
+					CZE = {
+						NOT = {
+							has_completed_focus = CZE_contact_the_czech_and_slovak_legion
+						}
+					}
+				}
+				ENG = {
+					add_ace = {
+						name = "Karel"
+						surname = "Kuttelwascher"
+						callsign = "Kut"
+						type = fighter_good
+						is_female = no
+					}
+					add_ace = {
+						name = "Leopold"
+						surname = "Šrom"
+						callsign = "Orel"		#made up based on coat of arms
+						type = fighter_good
+						is_female = no
+					}
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+			}
+
+			custom_effect_tooltip = generic_has_happen_tt
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = CZE_frantisek_moravec_mun
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+			}
+			else = {
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = CZE_frantisek_moravec_mun_no_lar
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+
+			}
+			if = {
+				limit = {
+					has_character = CZE_sergej_ingr 
+				}
+				custom_effect_tooltip = available_military_high_command
+				show_ideas_tooltip = CZE_sergej_ingr
+				custom_effect_tooltip = generic_skip_one_line_tt
+			}
+		}
+	}
+}
+
+country_event = { #Checking back in with the Soviets to make sure it's still sane to give them Czech exiles
+	id = MUN_czech_exile.2
+	title = MUN_czech_exile.2.t
+	desc = MUN_czech_exile.2.d
+	picture = GFX_report_event_HUN_hungary_occupies_area
+	
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				CZE = {
+					is_government_in_exile = no
+					is_ai = yes #Don't steal from a player
+					OR = {
+						exists = no
+						has_capitulated = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					original_tag = SOV
+				}
+				if = {
+					limit = {
+						OR = {
+							has_government = democratic
+							has_government = communism
+							NOT = {
+								has_government = GER
+							}
+						}
+						NOT = {
+							has_war_with = ENG
+							has_war_with = FRA
+							has_war_with = POL
+							has_war_with = CZE
+						}
+						#has_war_with = GER
+						surrender_progress < 0.95
+					}
+					SOV = {
+						country_event = { id = MUN_czech_exile.1 days = 3 }
+					}
+				}
+			}
+		}
+	}
+
+	option = { #welcome
+		name = MUN_czech_exile.2.a
+	}
+}
+
+>>>>>>> Stashed changes
 #########################
 ###    News Events    ###
 #########################

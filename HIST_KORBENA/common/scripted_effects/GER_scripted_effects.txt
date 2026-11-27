@@ -619,6 +619,65 @@ MR_pact_transfer_faction_state_effect = {
 	}
 	if = {
 		limit = {
+<<<<<<< Updated upstream
+=======
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 1058
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 1058 }
+	}
+	if = {
+		limit = {
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 1059
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 1059 }
+	}
+	if = {
+		limit = {
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 1065
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 1065 }
+	}
+	if = {
+		limit = {
+			89 = {
+				OR = {
+					is_controlled_by = ROOT
+					any_other_country = {
+						controls_state = 1000
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		SOU = { transfer_state = 1000 }
+	}
+	if = {
+		limit = {
+>>>>>>> Stashed changes
 			784 = {
 				OR = {
 					is_controlled_by = ROOT
@@ -1711,6 +1770,125 @@ GER_setup_CHI_sphere_of_influence_array = {
 	}
 }
 
+<<<<<<< Updated upstream
+=======
+# Setup faction-wide effects where GER is FROM (Update here when new things are added)
+GER_setup_faction_wide_aoe_effects_from = {
+	
+	IF = {
+		limit = {
+			FROM = {
+				original_tag = GER
+				OR = {
+					has_completed_focus = GER_pool_technical_know_how_ww
+					has_completed_focus = GER_pool_technical_know_how
+				}
+			}
+			NOT = { has_idea = GER_pool_technical_know_how }
+		}
+		add_ideas = GER_pool_technical_know_how
+	}
+	IF = {
+		limit = {
+			FROM = {
+				original_tag = GER
+				OR = {
+					has_completed_focus = GER_shared_rd_programs_ww
+					has_completed_focus = GER_shared_rd_programs
+				}
+				is_in_tech_sharing_group = ger_dem_research
+			}
+		}
+		add_to_tech_sharing_group = ger_dem_research 
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+	IF = {
+		limit = {
+			FROM = {
+				original_tag = GER
+				has_completed_focus = GER_mitteleuropa_cooperation_sphere
+				is_in_tech_sharing_group = ger_mitteleuropa_research
+			}
+		}
+		add_to_tech_sharing_group = ger_mitteleuropa_research 
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+	IF = {
+		limit = {
+			FROM = {
+				original_tag = GER
+				has_completed_focus = GER_establish_a_customs_union
+			}
+			NOT = { has_idea = GER_mitteleuropa_customs_union_member }
+		}
+		add_ideas = GER_mitteleuropa_customs_union_member
+	}
+
+}
+
+# Setup faction-wide effects where GER is ROOT (Update here when new things are added)
+GER_setup_faction_wide_aoe_effects_root = {
+	
+	IF = {
+		limit = {
+			ROOT = {
+				original_tag = GER
+				OR = {
+					has_completed_focus = GER_pool_technical_know_how_ww
+					has_completed_focus = GER_pool_technical_know_how
+				}
+			}
+			NOT = { has_idea = GER_pool_technical_know_how }
+		}
+		FROM = {
+			add_ideas = GER_pool_technical_know_how
+		}
+	}
+	IF = {
+		limit = {
+			ROOT = {
+				original_tag = GER
+				OR = {
+					has_completed_focus = GER_shared_rd_programs_ww
+					has_completed_focus = GER_shared_rd_programs
+				}
+				is_in_tech_sharing_group = ger_dem_research
+			}
+		}
+		FROM = {
+			add_to_tech_sharing_group = ger_dem_research 
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+	IF = {
+		limit = {
+			ROOT = {
+				original_tag = GER
+				has_completed_focus = GER_mitteleuropa_cooperation_sphere
+				is_in_tech_sharing_group = ger_mitteleuropa_research
+			}
+		}
+		FROM = {
+			add_to_tech_sharing_group = ger_mitteleuropa_research 
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+	}
+	IF = {
+		limit = {
+			ROOT = {
+				original_tag = GER
+				has_completed_focus = GER_establish_a_customs_union
+			}
+			NOT = { has_idea = GER_mitteleuropa_customs_union_member }
+		}
+		FROM = {
+			add_to_tech_sharing_group = GER_mitteleuropa_customs_union_member 
+		}
+	}
+
+}
+
+>>>>>>> Stashed changes
 GER_one_more_member_increase_rnd_program_strength = {
 	add_to_variable = { #always add a faction member
 		GER_rnd_programs_modifier_allies_count = 1
@@ -2151,7 +2329,118 @@ GER_remove_replaced_advisor_3_effects = {
 		}
 	}
 }
+<<<<<<< Updated upstream
 
+=======
+GER_remove_replaced_advisor_4_effects = {
+	custom_effect_tooltip = {
+		localization_key = replace_ascended_advisor_tt
+		CHARACTER = [GetAscendedAdvisorName4]
+		TRAIT = [GetAscendedAdvisorTrait4]
+	}
+	hidden_effect = {
+		if = { # TODT REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 1 }
+			}
+			GER_remove_todt_effects = yes
+		}
+		else_if = { # SPEER REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 2 }
+			}
+			GER_remove_speer_effects = yes
+		}
+		else_if = { # GÖRING REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 3 }
+			}
+			GER_remove_goring_effects = yes
+		}
+		else_if = { # HIMMLER REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 4 }
+			}
+			GER_remove_himmler_effects = yes
+		}
+		else_if = { # GOEBBELS REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 5 }
+			}
+			GER_remove_goebbels_effects = yes
+		}
+		else_if = { # HESS REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 6 }
+			}
+			GER_remove_hess_effects = yes
+		}
+		else_if = { # BORMANN REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_4 = 7 }
+			}
+			GER_remove_bormann_effects = yes
+		}
+		else = {
+			log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_4] effects."
+		}
+	}
+}
+GER_remove_replaced_advisor_5_effects = {
+	custom_effect_tooltip = {
+		localization_key = replace_ascended_advisor_tt
+		CHARACTER = [GetAscendedAdvisorName5]
+		TRAIT = [GetAscendedAdvisorTrait5]
+	}
+	hidden_effect = {
+		if = { # TODT REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 1 }
+			}
+			GER_remove_todt_effects = yes
+		}
+		else_if = { # SPEER REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 2 }
+			}
+			GER_remove_speer_effects = yes
+		}
+		else_if = { # GÖRING REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 3 }
+			}
+			GER_remove_goring_effects = yes
+		}
+		else_if = { # HIMMLER REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 4 }
+			}
+			GER_remove_himmler_effects = yes
+		}
+		else_if = { # GOEBBELS REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 5 }
+			}
+			GER_remove_goebbels_effects = yes
+		}
+		else_if = { # HESS REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 6 }
+			}
+			GER_remove_hess_effects = yes
+		}
+		else_if = { # BORMANN REPLACED
+			limit = {
+				check_variable = { GER_ascended_advisor_5 = 7 }
+			}
+			GER_remove_bormann_effects = yes
+		}
+		else = {
+			log = "Something bad happened trying to remove advisor [?GER_ascended_advisor_4] effects."
+		}
+	}
+}
+>>>>>>> Stashed changes
 # Adding the new advisor effects after having replaced someone else
 GER_add_replacing_advisor_effects = {
 	if = { # TODT ADDED
@@ -2283,6 +2572,21 @@ GER_remove_todt_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 1 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 1 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE SPEER EFFECTS
@@ -2364,6 +2668,21 @@ GER_remove_speer_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 2 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 2 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE GÖRING EFFECTS
@@ -2443,6 +2762,21 @@ GER_remove_goring_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 3 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 3 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE HIMMLER EFFECTS
@@ -2556,6 +2890,21 @@ GER_remove_himmler_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 4 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 4 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE GOEBBELS EFFECTS
@@ -2659,6 +3008,21 @@ GER_remove_goebbels_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 5 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 5 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE HESS EFFECTS
@@ -2792,6 +3156,21 @@ GER_remove_hess_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 6 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_5 = 6 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # ADD/REMOVE BORMANN EFFECTS
@@ -2887,6 +3266,21 @@ GER_remove_bormann_effects = {
 		}
 		set_variable = { GER_ascended_advisor_3 = 0 }
 	}
+<<<<<<< Updated upstream
+=======
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 7 }
+		}
+		set_variable = { GER_ascended_advisor_4 = 0 }
+	}
+	else_if = {
+		limit = {
+			check_variable = { GER_ascended_advisor_4 = 7 }
+		}
+		set_variable = { GER_ascended_advisor_5 = 0 }
+	}
+>>>>>>> Stashed changes
 }
 
 # For when Göring can be promoted to country leader via content outside of Inner Circle - make sure that if he was the prevailing industrialist but didn't complete focus, someone else will be enabled
@@ -2903,6 +3297,11 @@ GER_replace_goring_as_prevailing_industrialist = {
 					check_variable = { GER_ascended_advisor_1 = 2 }
 					check_variable = { GER_ascended_advisor_2 = 2 }
 					check_variable = { GER_ascended_advisor_3 = 2 }
+<<<<<<< Updated upstream
+=======
+					check_variable = { GER_ascended_advisor_4 = 2 }
+					check_variable = { GER_ascended_advisor_5 = 2 }
+>>>>>>> Stashed changes
 				}
 			}
 			set_variable = { GER_industrialist_prevailed = 2 }
@@ -2913,6 +3312,11 @@ GER_replace_goring_as_prevailing_industrialist = {
 					check_variable = { GER_ascended_advisor_1 = 1 }
 					check_variable = { GER_ascended_advisor_2 = 1 }
 					check_variable = { GER_ascended_advisor_3 = 1 }
+<<<<<<< Updated upstream
+=======
+					check_variable = { GER_ascended_advisor_4 = 1 }
+					check_variable = { GER_ascended_advisor_5 = 1 }
+>>>>>>> Stashed changes
 				}
 			}
 			set_variable = { GER_industrialist_prevailed = 1 }

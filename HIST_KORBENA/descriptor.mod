@@ -1,4 +1,4 @@
-version="1.17.3.0"
+version="1.19.4.2"
 tags={
 	"Balance"
 	"Gameplay"
@@ -9,12 +9,15 @@ tags={
 	"Map"
 	"National Focuses"
 }
-replace_path="common/autonomous_states"
-replace_path="common/bookmarks"
-replace_path="common/ai_strategy"
-replace_path="common/ai_strategy_plans"
-replace_path="history/states"
+name="HIST_KORBENA"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
+<<<<<<< Updated upstream
 name="HIST_KORBENA"
 supported_version="1.18.0.0"
+=======
+replace_path="history/states"
+replace_path="history/units"
+supported_version="1.19.4.2"
+remote_file_id="3789880129"
+>>>>>>> Stashed changes
